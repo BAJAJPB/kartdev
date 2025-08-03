@@ -5,6 +5,7 @@ import { Statistics } from './components/Statistics';
 import { ServicesGrid } from './components/ServicesGrid';
 import { ServiceDetailCards } from './components/ServiceDetailCards';
 import { AboutSection } from './components/AboutSection';
+import { OurClients } from './components/OurClients';
 import { CtaSection } from './components/CtaSection';
 import { Footer } from './components/Footer';
 import { 
@@ -57,7 +58,12 @@ function App() {
       <div id="workshops"></div>
       <div id="consulting"></div>
       
-      <AboutSection 
+      <OurClients 
+        title="Clients include:"
+        logos={companyLogos}
+      />
+      
+      <AboutSection
         title="About"
         name="Nivedan Rathi"
         role="Entrepreneur, Educator, Creator"
