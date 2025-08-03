@@ -8,14 +8,14 @@ interface HeaderProps {
   ctaLink: string;
 }
 
-export const Header: React.FC<HeaderProps> = ({ logo, navigation, ctaText, ctaLink }) => {
+export const Header: React.FC<HeaderProps> = ({ navigation, ctaText, ctaLink }) => {
   return (
-    <header className="bg-transparent sticky top-0 z-50 transition-all duration-300">
-      <div className="max-w-6xl mx-auto px-4 py-3">
+    <header className="bg-primary-700/95 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-lg">
+      <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <div className="text-white font-montserrat font-bold text-2xl">
+            <div className="text-white font-montserrat font-bold text-2xl hover:text-accent-orange transition-colors duration-200">
               AI with Nivedan
             </div>
           </div>
@@ -28,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({ logo, navigation, ctaText, ctaLi
                 href={item.href}
                 target={item.external ? "_blank" : "_self"}
                 rel={item.external ? "noreferrer noopener" : undefined}
-                className="text-white text-base font-montserrat font-normal hover:text-[#FF7FE8] transition-colors duration-200 tracking-wider"
+                className="text-white text-base font-montserrat font-medium hover:text-accent-pink transition-all duration-200 tracking-wider relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-accent-pink after:transition-all after:duration-300 hover:after:w-full"
               >
                 {item.label}
               </a>
@@ -40,7 +40,7 @@ export const Header: React.FC<HeaderProps> = ({ logo, navigation, ctaText, ctaLi
             href={ctaLink}
             target="_blank"
             rel="noreferrer noopener"
-            className="bg-[#EB721A] hover:bg-[#231B3B] text-white px-6 py-2.5 rounded-lg font-montserrat font-bold text-base transition-all duration-200 transform hover:scale-105"
+            className="bg-gradient-to-r from-accent-orange to-accent-pink hover:from-accent-pink hover:to-accent-orange text-white px-8 py-3 rounded-lg font-montserrat font-bold text-base transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             {ctaText}
           </a>

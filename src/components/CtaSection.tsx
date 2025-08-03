@@ -1,4 +1,5 @@
 import React from 'react';
+import { ContactForm } from './ContactForm';
 
 interface CtaSectionProps {
   title: string;
@@ -14,22 +15,32 @@ export const CtaSection: React.FC<CtaSectionProps> = ({
   buttonLink 
 }) => {
   return (
-    <section className="bg-gradient-to-r from-[#8051FF] to-[#000000] py-20">
-      <div className="max-w-4xl mx-auto px-4 text-center">
-        <h2 className="text-5xl font-montserrat font-bold text-white mb-8 leading-tight">
-          {title}
-        </h2>
-        
-        <p className="text-xl font-montserrat text-white mb-12 leading-relaxed max-w-2xl mx-auto">
-          {subtitle}
-        </p>
-        
-        <button
-          onClick={() => window.open(buttonLink, '_self')}
-          className="bg-[#FF7FE8] hover:bg-[#DEFF00] text-[#231B3B] px-8 py-4 rounded font-montserrat font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
-        >
-          {buttonText}
-        </button>
+    <section className="bg-gradient-to-r from-primary-500 to-black py-20">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Column - CTA Content */}
+          <div className="text-white space-y-8">
+            <h2 className="text-4xl lg:text-5xl font-montserrat font-black leading-tight animate-fade-in">
+              {title}
+            </h2>
+            
+            <p className="text-white/90 text-xl font-montserrat leading-relaxed animate-slide-up">
+              {subtitle}
+            </p>
+            
+            <button
+              onClick={() => window.open(buttonLink, '_self')}
+              className="bg-gradient-to-r from-accent-orange to-accent-pink hover:from-accent-pink hover:to-accent-orange text-white px-12 py-5 rounded-xl font-montserrat font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl animate-scale-in"
+            >
+              {buttonText}
+            </button>
+          </div>
+
+          {/* Right Column - Contact Form */}
+          <div className="animate-fade-in">
+            <ContactForm />
+          </div>
+        </div>
       </div>
     </section>
   );

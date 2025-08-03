@@ -9,7 +9,6 @@ interface HeroSectionProps {
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ 
-  title, 
   subtitle, 
   ctaText, 
   ctaLink, 

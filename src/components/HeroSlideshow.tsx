@@ -114,26 +114,26 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center">
         <div className="space-y-8 max-w-4xl mx-auto">
           {/* Main Title */}
-          <h1 className="text-6xl lg:text-8xl font-montserrat font-black leading-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-8xl font-montserrat font-black leading-tight animate-fade-in">
             <span className="text-white text-shadow-lg">{title}</span>
           </h1>
 
           {/* Tagline */}
-          <div className="inline-block bg-[#EB721A] bg-opacity-90 text-white px-8 py-3 rounded-full backdrop-blur-sm">
-            <span className="text-2xl font-montserrat font-bold">
+          <div className="inline-block bg-gradient-to-r from-accent-orange to-accent-pink bg-opacity-95 text-white px-8 py-4 rounded-full backdrop-blur-md shadow-lg animate-scale-in">
+            <span className="text-xl md:text-2xl font-montserrat font-bold">
               {tagline}
             </span>
           </div>
 
           {/* Subtitle */}
-          <p className="text-white text-2xl lg:text-3xl font-montserrat font-medium max-w-3xl mx-auto leading-relaxed text-shadow">
+          <p className="text-white text-xl md:text-2xl lg:text-3xl font-montserrat font-medium max-w-4xl mx-auto leading-relaxed text-shadow animate-slide-up">
             {subtitle}
           </p>
 
           {/* CTA Button */}
           <button
             onClick={() => window.open(ctaLink, "_blank")}
-            className="bg-gradient-to-r from-[#EB721A] to-[#FF7FE8] hover:from-[#FF7FE8] hover:to-[#EB721A] text-white px-12 py-5 rounded-lg font-montserrat font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl backdrop-blur-sm"
+            className="bg-gradient-to-r from-accent-orange to-accent-pink hover:from-accent-pink hover:to-accent-orange text-white px-12 py-5 rounded-xl font-montserrat font-bold text-xl transition-all duration-300 transform hover:scale-110 shadow-2xl backdrop-blur-sm animate-bounce"
           >
             {ctaText}
           </button>

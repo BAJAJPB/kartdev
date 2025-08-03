@@ -8,7 +8,7 @@ interface FooterProps {
   copyright: string;
 }
 
-export const Footer: React.FC<FooterProps> = ({ logo, description, sections, copyright }) => {
+export const Footer: React.FC<FooterProps> = ({ description, sections, copyright }) => {
   return (
     <footer className="bg-[#231B3B] text-white py-16">
       <div className="max-w-6xl mx-auto px-4">

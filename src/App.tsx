@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Header } from './components/Header';
 import { HeroSlideshow } from './components/HeroSlideshow';
 import { Statistics } from './components/Statistics';
