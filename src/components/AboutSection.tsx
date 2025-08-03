@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SocialLink } from '../types';
 
 interface AboutSectionProps {
@@ -11,15 +11,32 @@ interface AboutSectionProps {
   companyLogos: string[];
 }
 
-export const AboutSection: React.FC<AboutSectionProps> = ({
-  title,
-  name,
-  role,
-  socialLinks,
-  description,
-  profileImage,
-  companyLogos
+export const AboutSection: React.FC<AboutSectionProps> = ({ 
+  title, 
+  name, 
+  role, 
+  socialLinks, 
+  profileImage, 
+  companyLogos 
 }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  
+  const newDescription = `AI Strategy Architect & Global Tech Innovator
+A rare blend of technical virtuosity and strategic vision, Nivedan Rathi transforms how
+enterprises harness AI's potential. From IIT Bombay to pioneering AI-driven quality control at
+Agrix Labs, and scaling Meesho during its hypergrowth phase, his journey reflects breakthrough
+innovation at every turn.
+Today, he's the strategic counsel behind AI transformation for industry titans like Kishore Biyani,
+architecting frameworks that integrate AI into organizational DNA.`;
+
+  const hiddenContent = `His acclaimed masterclass at NTU Singapore on "The New Value & Skill Stack in the Post-AI
+World" stands testament to his ability to decode AI's business impact with precision and
+foresight.
+Beyond his 70+ global keynotes, Nivedan leads the "AI Powered Entrepreneurs" community and
+designs next-generation AI curriculum, pursuing one mission: unlocking unprecedented value at
+the intersection of human creativity and artificial intelligence.
+For leaders seeking to transform AI complexity into competitive advantage, Nivedan brings
+battle-tested expertise in crafting actionable strategies that deliver measurable impact.`;
   return (
     <section className="bg-gradient-to-b from-primary-50 to-white py-20">
       <div className="max-w-6xl mx-auto px-4">
@@ -58,9 +75,22 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
             </div>
 
             <div className="prose prose-gray max-w-none">
-              <p className="text-primary-700 text-lg leading-relaxed font-montserrat">
-                {description}
-              </p>
+              <div className="text-primary-700 text-lg leading-relaxed font-montserrat">
+                <p className="mb-4 whitespace-pre-line">
+                  {newDescription}
+                  <button
+                    onClick={() => setIsExpanded(!isExpanded)}
+                    className="ml-2 text-accent-orange hover:text-accent-pink transition-colors duration-200 font-semibold underline"
+                  >
+                    {isExpanded ? 'read less...' : 'read more...'}
+                  </button>
+                </p>
+                {isExpanded && (
+                  <p className="whitespace-pre-line animate-fade-in">
+                    {hiddenContent}
+                  </p>
+                )}
+              </div>
             </div>
           </div>
 

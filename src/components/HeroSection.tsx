@@ -15,35 +15,40 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   heroImage 
 }) => {
   return (
-    <section className="bg-[#231B3B] relative min-h-screen flex items-center overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="bg-gradient-to-br from-primary-800 via-primary-700 to-primary-900 relative min-h-screen flex items-center overflow-hidden">
+      {/* Subtle background elements */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary-600/5 to-transparent"></div>
+      
+      <div className="max-w-6xl mx-auto px-4 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
         {/* Content */}
-        <div className="space-y-8">
-          <h1 className="text-5xl lg:text-7xl font-montserrat font-black leading-tight">
+        <div className="space-y-8 animate-fade-in">
+          <h1 className="text-4xl lg:text-6xl font-montserrat font-black leading-tight">
             <span className="text-white">Master The</span>
             <br />
-            <span className="text-[#EB721A]">AI </span>
+            <span className="bg-gradient-to-r from-accent-orange to-accent-pink bg-clip-text text-transparent">AI </span>
             <span className="text-white">Revolution</span>
           </h1>
           
-          <p className="text-white text-xl font-montserrat max-w-2xl leading-relaxed">
+          <p className="text-white/90 text-lg font-montserrat max-w-2xl leading-relaxed">
             {subtitle}
           </p>
           
           <button 
             onClick={() => window.open(ctaLink, '_self')}
-            className="bg-gradient-to-r from-[#EB721A] to-[#EB721A] hover:bg-[#231B3B] hover:border-[#FF7FE8] border border-transparent text-white px-8 py-4 rounded-lg font-montserrat font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="group bg-gradient-to-r from-accent-orange to-accent-orange hover:from-accent-orange hover:to-accent-pink text-primary-900 px-10 py-4 rounded-xl font-montserrat font-bold text-lg transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-accent-orange/25 relative overflow-hidden"
           >
-            {ctaText}
+            <span className="relative z-10">{ctaText}</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-accent-pink to-accent-orange opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </button>
         </div>
 
         {/* Hero Image */}
-        <div className="relative">
+        <div className="relative animate-scale-in">
+          <div className="absolute inset-0 bg-gradient-to-r from-accent-orange/20 to-accent-pink/20 rounded-2xl blur-xl transform rotate-3"></div>
           <img 
             src={heroImage}
             alt="AI Revolution Illustration"
-            className="w-full h-auto object-cover rounded-lg shadow-2xl"
+            className="relative w-full h-auto object-cover rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-700"
           />
         </div>
       </div>
