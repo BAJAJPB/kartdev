@@ -68,7 +68,7 @@ export const Gallery: React.FC<GalleryProps> = ({
             {images.map((image, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-80 h-60 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="flex-shrink-0 w-72 h-96 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 style={{ scrollSnapAlign: 'start' }}
               >
                 <img
