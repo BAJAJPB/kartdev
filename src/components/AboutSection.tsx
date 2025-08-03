@@ -116,41 +116,37 @@ battle-tested expertise in crafting actionable strategies that deliver measurabl
           </div>
         </div>
 
-        {/* Four Achievement Badges */}
+        {/* Four Achievement Badges with Images Only */}
         <div className="mt-20 animate-fade-in">
           <div className="bg-white rounded-3xl p-8 shadow-lg">
             <div className="flex justify-center items-center space-x-12 flex-wrap gap-8">
-              {/* IITB Alumnus */}
-              <div className="group cursor-pointer text-center">
-                <div className="w-24 h-24 mx-auto mb-2 bg-gradient-to-b from-amber-200 to-amber-400 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
-                  <div className="text-amber-800 font-bold text-xs">🎓</div>
-                </div>
-                <div className="text-sm font-montserrat font-semibold text-gray-700">IITB<br/>Alumnus</div>
-              </div>
+              {/* Alumnus */}
+              <img
+                src="/lovable-uploads/alumnus.jpg"
+                alt="Alumnus"
+                className="w-24 h-24 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+              />
               
               {/* Ex-Meesho */}
-              <div className="group cursor-pointer text-center">
-                <div className="w-24 h-24 mx-auto mb-2 bg-gradient-to-b from-amber-200 to-amber-400 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
-                  <div className="text-amber-800 font-bold text-xs">💼</div>
-                </div>
-                <div className="text-sm font-montserrat font-semibold text-gray-700">Ex-Meesho</div>
-              </div>
+              <img
+                src="/lovable-uploads/exmeesho.jpg"
+                alt="Ex-Meesho"
+                className="w-24 h-24 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+              />
               
               {/* Speaker */}
-              <div className="group cursor-pointer text-center">
-                <div className="w-24 h-24 mx-auto mb-2 bg-gradient-to-b from-amber-200 to-amber-400 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
-                  <div className="text-amber-800 font-bold text-xs">🎤</div>
-                </div>
-                <div className="text-sm font-montserrat font-semibold text-gray-700">Speaker</div>
-              </div>
+              <img
+                src="/lovable-uploads/speaker.jpg"
+                alt="Speaker"
+                className="w-24 h-24 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+              />
               
               {/* Angel Investor */}
-              <div className="group cursor-pointer text-center">
-                <div className="w-24 h-24 mx-auto mb-2 bg-gradient-to-b from-amber-200 to-amber-400 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
-                  <div className="text-amber-800 font-bold text-xs">👼</div>
-                </div>
-                <div className="text-sm font-montserrat font-semibold text-gray-700">Angel<br/>Investor</div>
-              </div>
+              <img
+                src="/lovable-uploads/angel investor.jpg"
+                alt="Angel Investor"
+                className="w-24 h-24 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+              />
             </div>
           </div>
         </div>

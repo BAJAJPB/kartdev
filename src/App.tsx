@@ -44,26 +44,22 @@ function App() {
       
       <Statistics statistics={statistics} />
       
+      <OurClients 
+        title="Brands that trust us"
+        brands={brandsThatTrustUs} 
+      />
+      
       <OfferingsGrid 
         title="Our Offerings"
         offerings={ourOfferings}
       />
       
-      <div id="newsletter"></div>
-      
-      <ServiceDetailCards 
-        title="Start Your Journey to Mastering AI"
-        cards={serviceDetailCards}
-      />
-      
+      <div id="newsletter"></div>  
       <div id="community"></div>
       <div id="workshops"></div>
       <div id="consulting"></div>
       
-      <OurClients 
-        title="Brands that trust us"
-        brands={brandsThatTrustUs} 
-      />
+
       
       <AboutSection
         title="About"

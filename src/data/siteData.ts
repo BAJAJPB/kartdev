@@ -15,8 +15,8 @@ export const navigationItems: NavigationItem[] = [
 
 export const statistics: StatisticItem[] = [
   { value: "500K+", label: "Subscribers" },
-  { value: "100M+", label: "Impressions" },
-  { value: "10K+", label: "Members" }
+  { value: "120M+", label: "Impressions" },
+  { value: "70+", label: "Events & Workshops" }
 ];
 
 export const serviceCards: ServiceCard[] = [
