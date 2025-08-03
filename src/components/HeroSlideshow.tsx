@@ -71,7 +71,7 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
   };
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Slideshow Background */}
       <div className="absolute inset-0">
         {slideshowImages.map((image, index) => (
@@ -88,7 +88,7 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
               loading={index === 0 ? "eager" : "lazy"}
             />
             {/* Dark overlay for text readability */}
-            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-60"></div>
           </div>
         ))}
       </div>
@@ -114,26 +114,26 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center">
         <div className="space-y-8 max-w-4xl mx-auto">
           {/* Main Title */}
-          <h1 className="text-5xl md:text-6xl lg:text-8xl font-montserrat font-black leading-tight animate-fade-in">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-black leading-tight animate-fade-in">
             <span className="text-white text-shadow-lg">{title}</span>
           </h1>
 
           {/* Tagline */}
           <div className="inline-block bg-gradient-to-r from-accent-orange to-accent-pink bg-opacity-95 text-white px-8 py-4 rounded-full backdrop-blur-md shadow-lg animate-scale-in">
-            <span className="text-xl md:text-2xl font-montserrat font-bold">
+            <span className="text-lg md:text-xl font-montserrat font-bold">
               {tagline}
             </span>
           </div>
 
           {/* Subtitle */}
-          <p className="text-white text-xl md:text-2xl lg:text-3xl font-montserrat font-medium max-w-4xl mx-auto leading-relaxed text-shadow animate-slide-up">
+          <p className="text-white text-lg md:text-xl lg:text-2xl font-montserrat font-medium max-w-4xl mx-auto leading-relaxed text-shadow animate-slide-up">
             {subtitle}
           </p>
 
           {/* CTA Button */}
           <button
             onClick={() => window.open(ctaLink, "_blank")}
-            className="bg-gradient-to-r from-accent-orange to-accent-pink hover:from-accent-pink hover:to-accent-orange text-white px-12 py-5 rounded-xl font-montserrat font-bold text-xl transition-all duration-300 transform hover:scale-110 shadow-2xl backdrop-blur-sm animate-bounce"
+            className="bg-gradient-to-r from-accent-orange to-accent-pink hover:from-accent-pink hover:to-accent-orange text-white px-8 py-3 rounded-xl font-montserrat font-bold text-xl transition-all duration-300 transform hover:scale-110 shadow-2xl backdrop-blur-sm"
           >
             {ctaText}
           </button>
@@ -155,13 +155,6 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>

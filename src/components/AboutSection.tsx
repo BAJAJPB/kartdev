@@ -94,7 +94,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
                     <img
                       src={logo}
                       alt={`Company logo ${index + 1}`}
-                      className="h-20 w-20 object-contain opacity-60 hover:opacity-100 transition-all duration-300 transform group-hover:scale-110 filter grayscale hover:grayscale-0"
+                      className="h-28 w-28 object-contain opacity-60 hover:opacity-100 transition-all duration-300 transform group-hover:scale-110 filter grayscale hover:grayscale-0"
                     />
                   </div>
                 ))}
