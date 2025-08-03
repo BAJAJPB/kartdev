@@ -11,19 +11,19 @@ interface HeroSlideshowProps {
 
 const slideshowImages = [
   {
-    url: "/public/1.jpeg",
+    url: "/1.jpeg",
     alt: "AI Technology Visualization",
   },
   {
-    url: "/public/2.jpeg",
+    url: "/2.jpeg",
     alt: "Professional Speaking Environment",
   },
   {
-    url: "/public/3.jpeg",
+    url: "/3.jpeg",
     alt: "Modern Tech Workspace",
   },
   {
-    url: "/public/4.jpeg",
+    url: "/4.jpeg",
     alt: "Modern Tech Workspace",
   },
 ];
