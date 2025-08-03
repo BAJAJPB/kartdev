@@ -10,7 +10,7 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ navigation, ctaText, ctaLink }) => {
   return (
-    <header className="bg-primary-700/95 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-lg">
+    <header className="bg-gradient-to-r from-blue-600 to-purple-600 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-lg">
       <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
