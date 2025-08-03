@@ -50,6 +50,87 @@ export const serviceCards: ServiceCard[] = [
   }
 ];
 
+export const ourOfferings: ServiceDetailCard[] = [
+  {
+    id: "consultation",
+    title: "One-on-One Strategy Consultation for CEOs",
+    description: "Navigate AI transformation with personalized guidance",
+    features: [
+      "Featured Clients: Think9, Athena",
+      "Exclusive one-on-one consultations helping CEOs transform their AI vision into strategic roadmaps and actionable implementation plans."
+    ],
+    buttonText: "Book Consultation",
+    buttonLink: "https://calendly.com/atray-lla/alignmentcall",
+    imageUrl: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?w=400&h=500&fit=crop&crop=center",
+    bgColor: "bg-gradient-to-br from-blue-50 to-indigo-100"
+  },
+  {
+    id: "training",
+    title: "Training & Workshops",
+    description: "Empower your team with an AI training workshop",
+    features: [
+      "Featured Clients: Adani, Microsoft, upGrad, GrowthSchool",
+      "Tailored AI workshops that equip teams with practical skills to implement and scale AI solutions across business functions."
+    ],
+    buttonText: "Book Workshop",
+    buttonLink: "https://wa.me/916377589749",
+    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=500&fit=crop&crop=center",
+    bgColor: "bg-gradient-to-br from-purple-50 to-pink-100"
+  },
+  {
+    id: "speaking",
+    title: "Public Speaking",
+    description: "Nivedan has delivered 70+ talks on Global Stages",
+    features: [
+      "Featured Clients: TEDx, IITB, IIWC Thailand, NTU Singapore (MBA), Whistling Woods, Formidium, EO",
+      "Global keynote speaker on AI transformation, reaching 10,000+ business leaders across 70+ talks at corporate events and beyond."
+    ],
+    buttonText: "Book Speaking",
+    buttonLink: "https://wa.me/916377589749",
+    imageUrl: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&h=500&fit=crop&crop=center",
+    bgColor: "bg-gradient-to-br from-green-50 to-emerald-100"
+  },
+  {
+    id: "ai-poc",
+    title: "AI POC for Enterprises",
+    description: "Get Scalable AI Solutions within 2 weeks",
+    features: [
+      "Featured Clients: PAR, Aditya Birla, Bajaj Finserv, Polar AI",
+      "Fast-track AI implementation with enterprise-grade POCs, delivering validated solutions ready for scaling"
+    ],
+    buttonText: "Request POC",
+    buttonLink: "https://wa.me/916377589749",
+    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=500&fit=crop&crop=center",
+    bgColor: "bg-gradient-to-br from-orange-50 to-red-100"
+  },
+  {
+    id: "newsletter",
+    title: "Newsletter",
+    description: "Get weekly actionable AI strategies",
+    features: [
+      "Join 500K+ subscribers getting the latest AI tools and insights",
+      "Weekly digest of AI trends, tools, and practical applications for business growth"
+    ],
+    buttonText: "Subscribe Free",
+    buttonLink: "#newsletter",
+    imageUrl: "https://static.wixstatic.com/media/c04408_533553efa42f4aebbeab3b674e2b4d52~mv2.jpg/v1/fill/w_400,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c04408_533553efa42f4aebbeab3b674e2b4d52~mv2.jpg",
+    bgColor: "bg-gradient-to-br from-yellow-50 to-amber-100"
+  },
+  {
+    id: "community",
+    title: "APEs Community",
+    description: "Exclusive Network of AI-First Entrepreneurs",
+    features: [
+      "Connect with 10K+ AI-powered entrepreneurs and leaders",
+      "Access exclusive resources, networking events, and collaborative opportunities"
+    ],
+    buttonText: "Join Community",
+    buttonLink: "https://link.lla.in/Community-2",
+    imageUrl: "https://static.wixstatic.com/media/c04408_910540dc3b1247bdbfe9084b58a256b1~mv2.jpg/v1/fill/w_400,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1.jpg",
+    bgColor: "bg-gradient-to-br from-teal-50 to-cyan-100"
+  }
+];
+
 export const serviceDetailCards: ServiceDetailCard[] = [
   {
     id: "newsletter-detail",

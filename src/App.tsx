@@ -2,18 +2,18 @@
 import { Header } from './components/Header';
 import { HeroSlideshow } from './components/HeroSlideshow';
 import { Statistics } from './components/Statistics';
-import { ServicesGrid } from './components/ServicesGrid';
 import { ServiceDetailCards } from './components/ServiceDetailCards';
 import { AboutSection } from './components/AboutSection';
 import { OurClients } from './components/OurClients';
 import { Gallery } from './components/Gallery';
 import { CtaSection } from './components/CtaSection';
 import { Footer } from './components/Footer';
+import { OfferingsGrid } from './components/OfferingsGrid';
 import { 
   navigationItems, 
   statistics, 
-  serviceCards, 
   serviceDetailCards, 
+  ourOfferings,
   socialLinks, 
   footerSections, 
   brandsThatTrustUs, 
@@ -44,9 +44,9 @@ function App() {
       
       <Statistics statistics={statistics} />
       
-      <ServicesGrid 
+      <OfferingsGrid 
         title="Our Offerings"
-        services={serviceCards}
+        offerings={ourOfferings}
       />
       
       <div id="newsletter"></div>
