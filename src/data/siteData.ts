@@ -142,5 +142,17 @@ export const companyLogos: string[] = [
   "https://static.wixstatic.com/media/c04408_c17f6af314bc4a87bb50354e6e1c5e94~mv2.png/v1/fill/w_131,h_131,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/httpsdrive_google_comopenid%3D1eOviNSuAwrpmdqxK9LiC8uoxaGYhRC_v%26usp%3Ddrive_copy.png",
   "https://static.wixstatic.com/media/c04408_68f5899bdeec424793b50f69a42b40c7~mv2.png/v1/fill/w_131,h_131,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2.png",
   "https://static.wixstatic.com/media/c04408_be332f1ad215438883bd308964f4a45b~mv2.png/v1/fill/w_131,h_131,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/3.png",
-  "https://static.wixstatic.com/media/c04408_7e3da061c4a645c98288564abdc93fb4~mv2.png/v1/fill/w_131,h_131,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c04408_7e3da061c4a645c98288564abdc93fb4~mv2.png"
+  "https://static.wixstatic.com/media/c04408_7e3da061c4a645c98288564abdc93fb4~mv2.png/v1/fill/w_131,h_131,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c04408_7e3da061c4a645c98288564abdc93fb4~mv2.png",
+  "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=200&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1614680376573-df3480f33139?w=200&h=200&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1592179900008-8d906ff40e04?w=200&h=200&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=200&h=200&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=200&h=200&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=200&h=200&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=200&h=200&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=200&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=200&h=200&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=200&h=200&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1567360425618-1594206637d2?w=200&h=200&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=200&h=200&fit=crop&crop=center"
 ];
