@@ -15,9 +15,9 @@ import {
   serviceCards, 
   serviceDetailCards, 
   socialLinks, 
-  footerSections,
-  companyLogos,
-  galleryImages 
+  footerSections, 
+  brandsThatTrustUs, 
+  galleryImages
 } from './data/siteData';
 
 function App() {
@@ -61,8 +61,8 @@ function App() {
       <div id="consulting"></div>
       
       <OurClients 
-        title="Clients include:"
-        logos={companyLogos}
+        title="Brands that trust us"
+        brands={brandsThatTrustUs} 
       />
       
       <AboutSection
@@ -72,7 +72,7 @@ function App() {
         socialLinks={socialLinks}
         description="I'm Nivedan Rathi, an IIT Bombay alumnus, an ex-founding member of several tech startups, and a responsible AI adoption evangelist. In the last 10 years, I almost feel like I've had a front-seat ride on the Great Indian Startups Wave. I'm now all in on the most exciting human innovation to ever exist - The Great AI Evolution - that's what I call it now. I now lead Future & AI (500k followers) where we create content to demystify Generative AI and share ways for leaders & entrepreneurs to leverage it to automate their workflows & multiply their business impact."
         profileImage={profileImageUrl}
-        companyLogos={companyLogos}
+        companyLogos={brandsThatTrustUs.map(brand => brand.logo)}
       />
       
       <Gallery 
