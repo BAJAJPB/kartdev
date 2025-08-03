@@ -1,0 +1,169 @@
+import React, { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+interface HeroSlideshowProps {
+  title: string;
+  tagline: string;
+  subtitle: string;
+  ctaText: string;
+  ctaLink: string;
+}
+
+const slideshowImages = [
+  {
+    url: "/public/1.jpeg",
+    alt: "AI Technology Visualization",
+  },
+  {
+    url: "/public/2.jpeg",
+    alt: "Professional Speaking Environment",
+  },
+  {
+    url: "/public/3.jpeg",
+    alt: "Modern Tech Workspace",
+  },
+  {
+    url: "/public/4.jpeg",
+    alt: "Modern Tech Workspace",
+  },
+];
+
+export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
+  title,
+  tagline,
+  subtitle,
+  ctaText,
+  ctaLink,
+}) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  // Auto-advance slides
+  useEffect(() => {
+    if (!isAutoPlaying) return;
+
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slideshowImages.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [isAutoPlaying]);
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+    setIsAutoPlaying(false);
+    // Resume auto-play after 10 seconds
+    setTimeout(() => setIsAutoPlaying(true), 10000);
+  };
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slideshowImages.length);
+    setIsAutoPlaying(false);
+    setTimeout(() => setIsAutoPlaying(true), 10000);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide(
+      (prev) => (prev - 1 + slideshowImages.length) % slideshowImages.length
+    );
+    setIsAutoPlaying(false);
+    setTimeout(() => setIsAutoPlaying(true), 10000);
+  };
+
+  return (
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Slideshow Background */}
+      <div className="absolute inset-0">
+        {slideshowImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <img
+              src={image.url}
+              alt={image.alt}
+              className="w-full h-full object-cover"
+              loading={index === 0 ? "eager" : "lazy"}
+            />
+            {/* Dark overlay for text readability */}
+            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          </div>
+        ))}
+      </div>
+
+      {/* Navigation Arrows */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-200 backdrop-blur-sm"
+        aria-label="Previous slide"
+      >
+        <ChevronLeft size={24} />
+      </button>
+
+      <button
+        onClick={nextSlide}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-200 backdrop-blur-sm"
+        aria-label="Next slide"
+      >
+        <ChevronRight size={24} />
+      </button>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center">
+        <div className="space-y-8 max-w-4xl mx-auto">
+          {/* Main Title */}
+          <h1 className="text-6xl lg:text-8xl font-montserrat font-black leading-tight">
+            <span className="text-white text-shadow-lg">{title}</span>
+          </h1>
+
+          {/* Tagline */}
+          <div className="inline-block bg-[#EB721A] bg-opacity-90 text-white px-8 py-3 rounded-full backdrop-blur-sm">
+            <span className="text-2xl font-montserrat font-bold">
+              {tagline}
+            </span>
+          </div>
+
+          {/* Subtitle */}
+          <p className="text-white text-2xl lg:text-3xl font-montserrat font-medium max-w-3xl mx-auto leading-relaxed text-shadow">
+            {subtitle}
+          </p>
+
+          {/* CTA Button */}
+          <button
+            onClick={() => window.open(ctaLink, "_blank")}
+            className="bg-gradient-to-r from-[#EB721A] to-[#FF7FE8] hover:from-[#FF7FE8] hover:to-[#EB721A] text-white px-12 py-5 rounded-lg font-montserrat font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl backdrop-blur-sm"
+          >
+            {ctaText}
+          </button>
+        </div>
+      </div>
+
+      {/* Slide Indicators */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+        <div className="flex space-x-3">
+          {slideshowImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                index === currentSlide
+                  ? "bg-white scale-125"
+                  : "bg-white bg-opacity-50 hover:bg-opacity-75"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+        </div>
+      </div>
+    </section>
+  );
+};
