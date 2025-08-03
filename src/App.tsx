@@ -6,6 +6,7 @@ import { ServicesGrid } from './components/ServicesGrid';
 import { ServiceDetailCards } from './components/ServiceDetailCards';
 import { AboutSection } from './components/AboutSection';
 import { OurClients } from './components/OurClients';
+import { Gallery } from './components/Gallery';
 import { CtaSection } from './components/CtaSection';
 import { Footer } from './components/Footer';
 import { 
@@ -15,7 +16,8 @@ import {
   serviceDetailCards, 
   socialLinks, 
   footerSections,
-  companyLogos 
+  companyLogos,
+  galleryImages 
 } from './data/siteData';
 
 function App() {
@@ -73,7 +75,12 @@ function App() {
         companyLogos={companyLogos}
       />
       
-      <CtaSection 
+      <Gallery 
+        title="Gallery"
+        images={galleryImages}
+      />
+      
+      <CtaSection
         title="Join the Club"
         subtitle="Join our email list and get weekly digests of the latest & greatest in AI and access to special deals exclusive to our subscribers."
         buttonText="Click here to subscribe"

@@ -156,3 +156,16 @@ export const companyLogos: string[] = [
   "https://images.unsplash.com/photo-1567360425618-1594206637d2?w=200&h=200&fit=crop&crop=center",
   "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=200&h=200&fit=crop&crop=center"
 ];
+
+export const galleryImages: string[] = [
+  "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1559223607-b4d0555ae227?w=800&h=600&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&h=600&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&h=600&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&h=600&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800&h=600&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&h=600&fit=crop&crop=center",
+  "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop&crop=center"
+];
