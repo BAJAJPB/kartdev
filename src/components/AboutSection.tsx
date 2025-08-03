@@ -8,7 +8,6 @@ interface AboutSectionProps {
   socialLinks: SocialLink[];
   description: string;
   profileImage: string;
-  companyLogos: string[];
 }
 
 export const AboutSection: React.FC<AboutSectionProps> = ({ 
@@ -16,8 +15,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
   name, 
   role, 
   socialLinks, 
-  profileImage, 
-  companyLogos 
+  profileImage
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   
@@ -78,17 +76,27 @@ battle-tested expertise in crafting actionable strategies that deliver measurabl
               <div className="text-primary-700 text-lg leading-relaxed font-montserrat">
                 <p className="mb-4 whitespace-pre-line">
                   {newDescription}
-                  <button
-                    onClick={() => setIsExpanded(!isExpanded)}
-                    className="ml-2 text-accent-orange hover:text-accent-pink transition-colors duration-200 font-semibold underline"
-                  >
-                    {isExpanded ? 'read less...' : 'read more...'}
-                  </button>
+                  {!isExpanded && (
+                    <button
+                      onClick={() => setIsExpanded(true)}
+                      className="ml-2 text-accent-orange hover:text-accent-pink transition-colors duration-200 font-semibold underline"
+                    >
+                      read more...
+                    </button>
+                  )}
                 </p>
                 {isExpanded && (
-                  <p className="whitespace-pre-line animate-fade-in">
-                    {hiddenContent}
-                  </p>
+                  <div className="animate-fade-in">
+                    <p className="whitespace-pre-line mb-4">
+                      {hiddenContent}
+                    </p>
+                    <button
+                      onClick={() => setIsExpanded(false)}
+                      className="text-accent-orange hover:text-accent-pink transition-colors duration-200 font-semibold underline"
+                    >
+                      read less...
+                    </button>
+                  </div>
                 )}
               </div>
             </div>
@@ -108,30 +116,44 @@ battle-tested expertise in crafting actionable strategies that deliver measurabl
           </div>
         </div>
 
-        {/* Company Logos */}
-        {companyLogos.length > 0 && (
-          <div className="mt-20 animate-fade-in">
-            <h4 className="text-2xl font-montserrat font-bold text-primary-700 text-center mb-8">
-              Trusted by Leading Organizations
-            </h4>
-            <div className="bg-white rounded-3xl p-8 shadow-lg">
-              <div className="flex justify-center items-center space-x-12 flex-wrap gap-8">
-                {companyLogos.map((logo, index) => (
-                  <div
-                    key={index}
-                    className="group cursor-pointer"
-                  >
-                    <img
-                      src={logo}
-                      alt={`Company logo ${index + 1}`}
-                      className="h-28 w-28 object-contain opacity-60 hover:opacity-100 transition-all duration-300 transform group-hover:scale-110 filter grayscale hover:grayscale-0"
-                    />
-                  </div>
-                ))}
+        {/* Four Achievement Badges */}
+        <div className="mt-20 animate-fade-in">
+          <div className="bg-white rounded-3xl p-8 shadow-lg">
+            <div className="flex justify-center items-center space-x-12 flex-wrap gap-8">
+              {/* IITB Alumnus */}
+              <div className="group cursor-pointer text-center">
+                <div className="w-24 h-24 mx-auto mb-2 bg-gradient-to-b from-amber-200 to-amber-400 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
+                  <div className="text-amber-800 font-bold text-xs">🎓</div>
+                </div>
+                <div className="text-sm font-montserrat font-semibold text-gray-700">IITB<br/>Alumnus</div>
+              </div>
+              
+              {/* Ex-Meesho */}
+              <div className="group cursor-pointer text-center">
+                <div className="w-24 h-24 mx-auto mb-2 bg-gradient-to-b from-amber-200 to-amber-400 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
+                  <div className="text-amber-800 font-bold text-xs">💼</div>
+                </div>
+                <div className="text-sm font-montserrat font-semibold text-gray-700">Ex-Meesho</div>
+              </div>
+              
+              {/* Speaker */}
+              <div className="group cursor-pointer text-center">
+                <div className="w-24 h-24 mx-auto mb-2 bg-gradient-to-b from-amber-200 to-amber-400 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
+                  <div className="text-amber-800 font-bold text-xs">🎤</div>
+                </div>
+                <div className="text-sm font-montserrat font-semibold text-gray-700">Speaker</div>
+              </div>
+              
+              {/* Angel Investor */}
+              <div className="group cursor-pointer text-center">
+                <div className="w-24 h-24 mx-auto mb-2 bg-gradient-to-b from-amber-200 to-amber-400 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
+                  <div className="text-amber-800 font-bold text-xs">👼</div>
+                </div>
+                <div className="text-sm font-montserrat font-semibold text-gray-700">Angel<br/>Investor</div>
               </div>
             </div>
           </div>
-        )}
+        </div>
       </div>
     </section>
   );
