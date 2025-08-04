@@ -19,22 +19,18 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   
-  const newDescription = `AI Strategy Architect & Global Tech Innovator
-A rare blend of technical virtuosity and strategic vision, Nivedan Rathi transforms how
-enterprises harness AI's potential. From IIT Bombay to pioneering AI-driven quality control at
-Agrix Labs, and scaling Meesho during its hypergrowth phase, his journey reflects breakthrough
-innovation at every turn.
-Today, he's the strategic counsel behind AI transformation for industry titans like Kishore Biyani,
-architecting frameworks that integrate AI into organizational DNA.`;
+  const newDescription = `AI Strategy Architect & Global Tech Innovator  
+A rare blend of technical virtuosity and strategic vision, Nivedan Rathi transforms how enterprises harness AI's potential.  
 
-  const hiddenContent = `His acclaimed masterclass at NTU Singapore on "The New Value & Skill Stack in the Post-AI
-World" stands testament to his ability to decode AI's business impact with precision and
-foresight.
-Beyond his 70+ global keynotes, Nivedan leads the "AI Powered Entrepreneurs" community and
-designs next-generation AI curriculum, pursuing one mission: unlocking unprecedented value at
-the intersection of human creativity and artificial intelligence.
-For leaders seeking to transform AI complexity into competitive advantage, Nivedan brings
-battle-tested expertise in crafting actionable strategies that deliver measurable impact.`;
+From IIT Bombay to pioneering AI-driven quality control at Agrix Labs, and scaling Meesho during its hypergrowth phase, his journey reflects breakthrough innovation at every turn.  
+
+Today, he's the strategic counsel behind AI transformation for industry titans like Kishore Biyani, architecting frameworks that integrate AI into organizational DNA.`;
+
+const hiddenContent = `His acclaimed masterclass at NTU Singapore on "The New Value & Skill Stack in the Post-AI World" stands testament to his ability to decode AI's business impact with precision and foresight.  
+
+Beyond his 70+ global keynotes, Nivedan leads the "AI Powered Entrepreneurs" community and designs next-generation AI curriculum, pursuing one mission: unlocking unprecedented value at the intersection of human creativity and artificial intelligence.  
+
+For leaders seeking to transform AI complexity into competitive advantage, Nivedan brings battle-tested expertise in crafting actionable strategies that deliver measurable impact.`;
   return (
     <section className="bg-gradient-to-b from-primary-50 to-white py-20">
       <div className="max-w-6xl mx-auto px-4">
@@ -51,25 +47,6 @@ battle-tested expertise in crafting actionable strategies that deliver measurabl
             
             <div className="inline-block bg-gradient-to-r from-accent-orange to-accent-pink text-white px-6 py-3 rounded-xl shadow-lg">
               <span className="font-montserrat font-semibold text-lg">{role}</span>
-            </div>
-
-            {/* Social Links */}
-            <div className="flex space-x-6">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl hover:scale-125 transition-all duration-300 flex items-center justify-center group"
-                >
-                  <img 
-                    src={social.iconUrl}
-                    alt={social.platform}
-                    className="w-6 h-6 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                </a>
-              ))}
             </div>
 
             <div className="prose prose-gray max-w-none">
@@ -119,33 +96,33 @@ battle-tested expertise in crafting actionable strategies that deliver measurabl
         {/* Four Achievement Badges with Images Only */}
         <div className="mt-20 animate-fade-in">
           <div className="bg-white rounded-3xl p-8 shadow-lg">
-            <div className="flex justify-center items-center space-x-12 flex-wrap gap-8">
+            <div className="flex justify-center items-center space-x-20 flex-wrap gap-8">
               {/* Alumnus */}
               <img
                 src="/lovable-uploads/alumnus.jpg"
                 alt="Alumnus"
-                className="w-24 h-24 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+                className="w-28 h-28 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
               />
               
               {/* Ex-Meesho */}
               <img
                 src="/lovable-uploads/exmeesho.jpg"
                 alt="Ex-Meesho"
-                className="w-24 h-24 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+                className="w-28 h-28 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
               />
               
               {/* Speaker */}
               <img
                 src="/lovable-uploads/speaker.jpg"
                 alt="Speaker"
-                className="w-24 h-24 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+                className="w-28 h-28 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
               />
               
               {/* Angel Investor */}
               <img
                 src="/lovable-uploads/angel investor.jpg"
                 alt="Angel Investor"
-                className="w-24 h-24 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+                className="w-28 h-28 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
               />
             </div>
           </div>

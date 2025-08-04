@@ -11,19 +11,19 @@ interface HeroSlideshowProps {
 
 const slideshowImages = [
   {
-    url: "/1.jpeg",
+    url: "/1.png",
     alt: "AI Technology Visualization",
   },
   {
-    url: "/2.jpeg",
+    url: "/2.png",
     alt: "Professional Speaking Environment",
   },
   {
-    url: "/3.jpeg",
+    url: "/3.png",
     alt: "Modern Tech Workspace",
   },
   {
-    url: "/4.jpeg",
+    url: "/4.png",
     alt: "Modern Tech Workspace",
   },
 ];
@@ -71,7 +71,7 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[92vh] flex items-center overflow-hidden">
       {/* Slideshow Background */}
       <div className="absolute inset-0">
         {slideshowImages.map((image, index) => (
@@ -111,7 +111,7 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
       </button>
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-4 py-20">
+      <div className="relative z-10 max-w-6xl mx-32 px-4 py-20">
         <div className="space-y-8 max-w-4xl text-left">
           {/* Main Title */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-black leading-tight animate-fade-in">

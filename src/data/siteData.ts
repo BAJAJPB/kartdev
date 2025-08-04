@@ -229,50 +229,51 @@ export interface BrandInfo {
 export const brandsThatTrustUs: BrandInfo[] = [
   {
     name: "Adani",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/8/8b/Adani_2012_logo.svg",
+    logo: "/adani.jpg",
     description: "Led a 2-day AI transformation workshop for 45 CHROs from Adani Group, architecting next-gen HR frameworks."
   },
   {
     name: "Microsoft",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
+    logo: "/microsoft.jpg",
     description: "Designed an AI-Assisted Research & Content Creation curriculum for upGrad x Microsoft, empowering learners with practical AI workflows and tools."
   },
   {
     name: "PAR",
-    logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=200&h=100&fit=crop&crop=center",
+    logo: "/par.jpg",
     description: "Developed PAR's comprehensive GenAI transformation roadmap, designing scalable frameworks for innovation acceleration and operational efficiency."
   },
   {
     name: "Think9",
-    logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop&crop=center",
+    logo: "/think.jpg",
     description: "Serving as AI Strategy Consultant for Kishore Biyani's Think9 Group, architecting their enterprise-wide AI transformation initiatives."
   },
   {
     name: "Athena",
-    logo: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&h=100&fit=crop&crop=center",
+    logo: "/athena.jpg",
     description: "Led Athena Education's GenAI transformation initiative, architecting custom AI solutions for scholar project ideation and strategic workflows."
   },
   {
     name: "NTU Singapore",
-    logo: "https://upload.wikimedia.org/wikipedia/en/f/f9/Nanyang_Technological_University.svg",
+    logo: "/ntu.jpg",
     description: "Delivered a workshop on GenAI Business Transformation at NTU Singapore for MBA cohorts."
   },
   {
     name: "upGrad",
-    logo: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=200&h=100&fit=crop&crop=center",
+    logo: "/upgrad.jpg",
     description: "Designed an AI-Assisted Research & Content Creation curriculum for upGrad x Microsoft, empowering learners with practical AI workflows and tools."
   },
   {
     name: "TEDx",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/a/aa/TEDx_logo.svg",
+    logo: "/tedx.jpg",
     description: "Delivered a TEDx talk on 'The Teenage Founder's Secret Weapon: AI' at Neerja Modi School, inspiring young entrepreneurs to leverage AI for innovation."
   },
   {
     name: "Jagruk Fest",
-    logo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=100&fit=crop&crop=center",
+    logo: "/jagruk.jpg",
     description: "Delivered a comprehensive AI foundations session at Jagruk Fest, empowering teenagers with practical knowledge of artificial intelligence."
   }
 ];
+
 
 export const galleryImages: string[] = [
   "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop&crop=center",

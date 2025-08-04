@@ -33,9 +33,9 @@ function App() {
       />
       
       <HeroSlideshow 
-        title="AI with Nivedan"
+        title="Nivedan Raathi"
         tagline="The AI Guy"
-        subtitle="Artificial Intelligence Consultant and International Speaker"
+        subtitle="AI Strategy Architect & Global Tech Innovator"
         ctaText="Contact Now"
         ctaLink="https://wa.me/916377589749"
       />
