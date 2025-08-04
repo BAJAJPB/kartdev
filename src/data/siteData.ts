@@ -8,9 +8,10 @@ import {
 } from '../types';
 
 export const navigationItems: NavigationItem[] = [
-  { label: "Community", href: "https://chat.whatsapp.com/FIfmHT7Pc1NH1HIca2sAb8", external: true },
-  { label: "Newsletter", href: "#newsletter" },
-  { label: "Tools", href: "https://futureandai.com/tools/", external: true }
+  { label: "Offerings", href: "#offerings" },
+  { label: "About", href: "#about" },
+  { label: "Gallery", href: "#gallery" },
+  { label: "Contact", href: "#contact" }
 ];
 
 export const statistics: StatisticItem[] = [

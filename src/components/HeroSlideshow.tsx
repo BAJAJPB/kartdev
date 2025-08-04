@@ -112,7 +112,7 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-20">
-        <div className="space-y-8 max-w-4xl">
+        <div className="space-y-8 max-w-4xl text-left">
           {/* Main Title */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-black leading-tight animate-fade-in">
             <span className="text-white text-shadow-lg">{title}</span>
@@ -126,7 +126,7 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
           </div>
 
           {/* Subtitle */}
-          <p className="text-white text-lg md:text-xl lg:text-2xl font-montserrat font-medium max-w-4xl mx-auto leading-relaxed text-shadow animate-slide-up">
+          <p className="text-white text-lg md:text-xl lg:text-2xl font-montserrat font-medium max-w-4xl leading-relaxed text-shadow animate-slide-up">
             {subtitle}
           </p>
 
