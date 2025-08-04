@@ -2,7 +2,6 @@
 import { Header } from './components/Header';
 import { HeroSlideshow } from './components/HeroSlideshow';
 import { Statistics } from './components/Statistics';
-import { ServiceDetailCards } from './components/ServiceDetailCards';
 import { AboutSection } from './components/AboutSection';
 import { OurClients } from './components/OurClients';
 import { Gallery } from './components/Gallery';
@@ -12,7 +11,6 @@ import { OfferingsGrid } from './components/OfferingsGrid';
 import { 
   navigationItems, 
   statistics, 
-  serviceDetailCards, 
   ourOfferings,
   socialLinks, 
   footerSections, 

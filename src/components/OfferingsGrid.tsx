@@ -43,13 +43,8 @@ export const OfferingsGrid: React.FC<OfferingsGridProps> = ({ title, offerings }
                   {offering.title}
                 </h3>
                 
-                {/* Description */}
-                <p className="text-gray-700 text-sm font-medium mb-4 group-hover:text-gray-600 transition-colors duration-200">
-                  {offering.description}
-                </p>
-
                 {/* Features */}
-                <div className="space-y-2 mb-6">
+                <div className="space-y-2">
                   {offering.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="text-gray-600 text-sm leading-relaxed">
                       {feature.startsWith('Featured Clients:') ? (
@@ -62,14 +57,6 @@ export const OfferingsGrid: React.FC<OfferingsGridProps> = ({ title, offerings }
                     </div>
                   ))}
                 </div>
-
-                {/* CTA Button */}
-                <button
-                  onClick={() => window.open(offering.buttonLink, '_blank')}
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg active:scale-95"
-                >
-                  {offering.buttonText}
-                </button>
 
                 {/* Hover Effect Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl"></div>
