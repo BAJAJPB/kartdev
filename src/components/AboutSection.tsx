@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import { SocialLink } from '../types';
 
 interface AboutSectionProps {
   title: string;
   name: string;
   role: string;
-  socialLinks: SocialLink[];
   description: string;
   profileImage: string;
 }
@@ -14,7 +12,6 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
   title, 
   name, 
   role, 
-  socialLinks, 
   profileImage
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);

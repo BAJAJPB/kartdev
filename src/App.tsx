@@ -11,8 +11,7 @@ import { OfferingsGrid } from './components/OfferingsGrid';
 import { 
   navigationItems, 
   statistics, 
-  ourOfferings,
-  socialLinks, 
+  ourOfferings, 
   footerSections, 
   brandsThatTrustUs, 
   galleryImages
@@ -47,10 +46,12 @@ function App() {
         brands={brandsThatTrustUs} 
       />
       
-      <OfferingsGrid 
-        title="Our Offerings"
-        offerings={ourOfferings}
-      />
+      <div id="offerings">
+        <OfferingsGrid 
+          title="Our Offerings"
+          offerings={ourOfferings}
+        />
+      </div>
       
       <div id="newsletter"></div>  
       <div id="community"></div>
@@ -59,28 +60,33 @@ function App() {
       
 
       
-      <AboutSection
-        title="About"
-        name="Nivedan Rathi"
-        role="Entrepreneur, Educator, Creator"
-        socialLinks={socialLinks}
-        description="I'm Nivedan Rathi, an IIT Bombay alumnus, an ex-founding member of several tech startups, and a responsible AI adoption evangelist. In the last 10 years, I almost feel like I've had a front-seat ride on the Great Indian Startups Wave. I'm now all in on the most exciting human innovation to ever exist - The Great AI Evolution - that's what I call it now. I now lead Future & AI (500k followers) where we create content to demystify Generative AI and share ways for leaders & entrepreneurs to leverage it to automate their workflows & multiply their business impact."
-        profileImage={profileImageUrl}
-      />
+      <div id="about">
+        <AboutSection
+          title="About"
+          name="Nivedan Rathi"
+          role="Entrepreneur, Educator, Creator"
+          description="I'm Nivedan Rathi, an IIT Bombay alumnus, an ex-founding member of several tech startups, and a responsible AI adoption evangelist. In the last 10 years, I almost feel like I've had a front-seat ride on the Great Indian Startups Wave. I'm now all in on the most exciting human innovation to ever exist - The Great AI Evolution - that's what I call it now. I now lead Future & AI (500k followers) where we create content to demystify Generative AI and share ways for leaders & entrepreneurs to leverage it to automate their workflows & multiply their business impact."
+          profileImage={profileImageUrl}
+        />
+      </div>
       
-      <Gallery 
-        title="Gallery"
-        images={galleryImages}
-      />
+      <div id="gallery">
+        <Gallery 
+          title="Gallery"
+          images={galleryImages}
+        />
+      </div>
       
-      <CtaSection
-        title="Join the Club"
-        subtitle="Join our email list and get weekly digests of the latest & greatest in AI and access to special deals exclusive to our subscribers."
-        buttonText="Click here to subscribe"
-        buttonLink="#newsletter"
-      />
+      <div id="contact">
+        <CtaSection
+          title="Join the Club"
+          subtitle="Join our email list and get weekly digests of the latest & greatest in AI and access to special deals exclusive to our subscribers."
+          buttonText="Click here to subscribe"
+          buttonLink="#newsletter"
+        />
+      </div>
       
-      <Footer 
+      <Footer
         logo={logoUrl}
         description="Future & AI is the world's largest & fastest-growing learning & networking platform for AI entrepreneurs, leaders & enthusiasts. With over 500,000 followers & subscribers across channels, we're on a mission to help 1 Million people leverage AI to 10x their impact by 2025."
         sections={footerSections}
