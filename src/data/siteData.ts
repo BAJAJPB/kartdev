@@ -75,7 +75,7 @@ export const ourOfferings: ServiceDetailCard[] = [
     ],
     buttonText: "Book Workshop",
     buttonLink: "https://wa.me/916377589749",
-    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=500&fit=crop&crop=center",
+    imageUrl: "Training & Workshops.jpg",
     bgColor: "bg-gradient-to-br from-purple-50 to-pink-100"
   },
   {
@@ -88,7 +88,7 @@ export const ourOfferings: ServiceDetailCard[] = [
     ],
     buttonText: "Book Speaking",
     buttonLink: "https://wa.me/916377589749",
-    imageUrl: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&h=500&fit=crop&crop=center",
+    imageUrl: "Public Speaking.JPG",
     bgColor: "bg-gradient-to-br from-green-50 to-emerald-100"
   },
   {
@@ -127,7 +127,7 @@ export const ourOfferings: ServiceDetailCard[] = [
     ],
     buttonText: "Join Community",
     buttonLink: "https://link.lla.in/Community-2",
-    imageUrl: "https://static.wixstatic.com/media/c04408_910540dc3b1247bdbfe9084b58a256b1~mv2.jpg/v1/fill/w_400,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1.jpg",
+    imageUrl: "APE's Community.jpg",
     bgColor: "bg-gradient-to-br from-teal-50 to-cyan-100"
   }
 ];
@@ -276,14 +276,8 @@ export const brandsThatTrustUs: BrandInfo[] = [
 
 
 export const galleryImages: string[] = [
-  "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop&crop=center",
-  "https://images.unsplash.com/photo-1559223607-b4d0555ae227?w=800&h=600&fit=crop&crop=center",
-  "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&h=600&fit=crop&crop=center",
-  "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop&crop=center",
-  "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop&crop=center",
-  "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&h=600&fit=crop&crop=center",
-  "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&h=600&fit=crop&crop=center",
-  "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800&h=600&fit=crop&crop=center",
-  "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&h=600&fit=crop&crop=center",
-  "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop&crop=center"
+  "/Photo Galary_1.JPG",
+  "/Photo Galary_2.JPG",
+  "/Photo Galary_3.JPG",
+  "/Photo Galary_4.JPG.png",
 ];
