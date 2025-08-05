@@ -30,7 +30,6 @@ const slideshowImages = [
 
 export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
   title,
-  tagline,
   subtitle,
   ctaText,
   ctaLink,
@@ -117,13 +116,6 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-black leading-tight animate-fade-in">
             <span className="text-white text-shadow-lg">{title}</span>
           </h1>
-
-          {/* Tagline */}
-          <div className="inline-block bg-gradient-to-r from-accent-orange to-accent-pink bg-opacity-95 text-white px-8 py-4 rounded-full backdrop-blur-md shadow-lg animate-scale-in">
-            <span className="text-lg md:text-xl font-montserrat font-bold">
-              {tagline}
-            </span>
-          </div>
 
           {/* Subtitle */}
           <p className="text-white text-lg md:text-xl lg:text-2xl font-montserrat font-medium max-w-4xl leading-relaxed text-shadow animate-slide-up">

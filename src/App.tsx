@@ -5,17 +5,15 @@ import { Statistics } from './components/Statistics';
 import { AboutSection } from './components/AboutSection';
 import { OurClients } from './components/OurClients';
 import { Gallery } from './components/Gallery';
-import { CtaSection } from './components/CtaSection';
-import { Footer } from './components/Footer';
 import { OfferingsGrid } from './components/OfferingsGrid';
 import { 
   navigationItems, 
   statistics, 
   ourOfferings, 
-  footerSections, 
   brandsThatTrustUs, 
   galleryImages
 } from './data/siteData';
+import NewsletterSubscription from './components/newsletter-subscription';
 
 function App() {
   const logoUrl = "https://static.wixstatic.com/media/c04408_a515c4b0b2a843e78a63a3f1a57a1f41~mv2.png/v1/crop/x_119,y_436,w_811,h_203/fill/w_149,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c04408_a515c4b0b2a843e78a63a3f1a57a1f41~mv2.png";
@@ -32,13 +30,10 @@ function App() {
       />
       
       <HeroSlideshow 
-        title="Nivedan Raathi"
-        tagline="The AI Guy"
+        title="Nivedan Rathi"
         subtitle="AI Strategy Architect & Global Tech Innovator"
         ctaText="Contact Now"
-        ctaLink="https://wa.me/916377589749"
-      />
-      
+        ctaLink="https://wa.me/916377589749" tagline={''}      />
       <Statistics statistics={statistics} />
       
       <OurClients 
@@ -76,22 +71,7 @@ function App() {
           images={galleryImages}
         />
       </div>
-      
-      <div id="contact">
-        <CtaSection
-          title="Join the Club"
-          subtitle="Join our email list and get weekly digests of the latest & greatest in AI and access to special deals exclusive to our subscribers."
-          buttonText="Click here to subscribe"
-          buttonLink="#newsletter"
-        />
-      </div>
-      
-      <Footer
-        logo={logoUrl}
-        description="Future & AI is the world's largest & fastest-growing learning & networking platform for AI entrepreneurs, leaders & enthusiasts. With over 500,000 followers & subscribers across channels, we're on a mission to help 1 Million people leverage AI to 10x their impact by 2025."
-        sections={footerSections}
-        copyright="© 2023 by Future & AI. All rights reserved."
-      />
+      <NewsletterSubscription />
     </div>
   );
 }
