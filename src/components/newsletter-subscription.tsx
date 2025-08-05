@@ -54,7 +54,7 @@ export default function WeeklyAINewsletter() {
             {/* Left side - Content */}
             <div className="space-y-6">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                <span className="text-yellow-400">Weekly AI Newsletter:</span>{" "}
+                <span className="text-blue-700">Weekly AI Newsletter:</span>{" "}
                 <span className="text-white">Subscribe Today</span>
               </h1>
 
@@ -115,7 +115,7 @@ export default function WeeklyAINewsletter() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full"
+                  className="w-full bg-blue-800 text-white hover:bg-blue-600 transition-colors duration-200"
                   size="lg"
                 >
                   {isSubmitting ? "Submitting..." : "Submit"}

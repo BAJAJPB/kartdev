@@ -11,11 +11,11 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ navigation }) => {
   return (
-    <header className="bg-gradient-to-r from-blue-600 to-purple-600 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-lg">
-      <div className="max-w-6xl mx-auto px-4 py-4">
+    <header className="bg-blue-950 bg-gradient-to-r backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-lg">
+      <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Navigation Links */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             {navigation.map((item, index) => (
               <a
                 key={index}

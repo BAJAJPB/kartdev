@@ -8,6 +8,7 @@ import {
 } from '../types';
 
 export const navigationItems: NavigationItem[] = [
+  { label: "Home", href: "#home" },
   { label: "Offerings", href: "#offerings" },
   { label: "About", href: "#about" },
   { label: "Gallery", href: "#gallery" },

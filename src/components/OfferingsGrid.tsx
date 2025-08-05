@@ -37,7 +37,7 @@ export const OfferingsGrid: React.FC<OfferingsGridProps> = ({ title, offerings }
               </div>
 
               {/* Content Container */}
-              <div className={`${offering.bgColor} p-6 relative`}>
+              <div className={`${offering.bgColor} p-8 relative min-h-64 rounded-2xl`}>
                 {/* Title */}
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-800 transition-colors duration-200">
                   {offering.title}

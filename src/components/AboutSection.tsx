@@ -16,8 +16,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   
-  const newDescription = `AI Strategy Architect & Global Tech Innovator  
-A rare blend of technical virtuosity and strategic vision, Nivedan Rathi transforms how enterprises harness AI's potential.  
+  const newDescription = `A rare blend of technical virtuosity and strategic vision, Nivedan Rathi transforms how enterprises harness AI's potential.  
 
 From IIT Bombay to pioneering AI-driven quality control at Agrix Labs, and scaling Meesho during its hypergrowth phase, his journey reflects breakthrough innovation at every turn.  
 
@@ -77,7 +76,7 @@ For leaders seeking to transform AI complexity into competitive advantage, Nived
           </div>
 
           {/* Profile Image */}
-          <div className="relative animate-scale-in">
+          <div className="relative animate-scale-in max-w-md">
             <div className="bg-gradient-to-br from-accent-orange/20 to-accent-pink/20 rounded-3xl p-6 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105">
               <img 
                 src={profileImage}
@@ -98,28 +97,28 @@ For leaders seeking to transform AI complexity into competitive advantage, Nived
               <img
                 src="/lovable-uploads/alumnus.jpg"
                 alt="Alumnus"
-                className="w-28 h-28 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+                className="w-32 h-32 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
               />
               
               {/* Ex-Meesho */}
               <img
                 src="/lovable-uploads/exmeesho.jpg"
                 alt="Ex-Meesho"
-                className="w-28 h-28 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+                className="w-32 h-32 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
               />
               
               {/* Speaker */}
               <img
                 src="/lovable-uploads/speaker.jpg"
                 alt="Speaker"
-                className="w-28 h-28 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+                className="w-32 h-32 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
               />
               
               {/* Angel Investor */}
               <img
                 src="/lovable-uploads/angel investor.jpg"
                 alt="Angel Investor"
-                className="w-28 h-28 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+                className="w-32 h-32 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
               />
             </div>
           </div>

@@ -28,12 +28,14 @@ function App() {
         ctaText="Partner With Us"
         ctaLink="https://calendly.com/atray-lla/alignmentcall"
       />
-      
-      <HeroSlideshow 
-        title="Nivedan Rathi"
-        subtitle="AI Strategy Architect & Global Tech Innovator"
-        ctaText="Contact Now"
-        ctaLink="https://wa.me/916377589749" tagline={''}      />
+      <div id="home">
+        <HeroSlideshow 
+          title="Nivedan Rathi"
+          subtitle="AI Strategy Architect & Global Tech Innovator"
+          ctaText="Contact Now"
+          ctaLink="https://wa.me/916377589749" tagline={''}        />
+      </div>
+
       <Statistics statistics={statistics} />
       
       <OurClients 
@@ -59,7 +61,7 @@ function App() {
         <AboutSection
           title="About"
           name="Nivedan Rathi"
-          role="Entrepreneur, Educator, Creator"
+          role="AI Strategy Architect & Global Tech Innovator"
           description="I'm Nivedan Rathi, an IIT Bombay alumnus, an ex-founding member of several tech startups, and a responsible AI adoption evangelist. In the last 10 years, I almost feel like I've had a front-seat ride on the Great Indian Startups Wave. I'm now all in on the most exciting human innovation to ever exist - The Great AI Evolution - that's what I call it now. I now lead Future & AI (500k followers) where we create content to demystify Generative AI and share ways for leaders & entrepreneurs to leverage it to automate their workflows & multiply their business impact."
           profileImage={profileImageUrl}
         />
