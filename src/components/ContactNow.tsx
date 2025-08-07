@@ -63,7 +63,7 @@ export default function ContactUs() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left side - Contact Information */}
             <div className="space-y-8">
-              <Card className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border-blue-500/20">
+              <Card className="bg-white/5 backdrop-blur-lg border-white/10">
                 <CardContent className="p-8">
                   <div className="space-y-6">
                     <div className="text-center">
@@ -88,7 +88,7 @@ export default function ContactUs() {
 
             {/* Right side - Contact Form */}
             <div className="flex justify-center lg:justify-end">
-              <Card className="w-full max-w-lg bg-gradient-to-br from-blue-900/40 to-purple-900/40 backdrop-blur-sm border-blue-500/30">
+              <Card className="w-full max-w-lg bg-white/5 backdrop-blur-lg border-white/10">
                 <CardContent className="p-8">
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-4">

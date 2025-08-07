@@ -132,7 +132,7 @@ export default function WeeklyAINewsletter() {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
             {/* Brand Name */}
             <div>
-              <h3 className="text-2xl font-bold text-blue-500">AI Weekly</h3>
+              <h3 className="text-2xl font-bold text-blue-500">Newsletter</h3>
             </div>
           </div>
           <ContactNow />
@@ -140,7 +140,7 @@ export default function WeeklyAINewsletter() {
           {/* Copyright */}
           <div className="mt-8 pt-8 border-t border-gray-700 text-center">
             <p className="text-gray-400 text-sm">
-              © 2024 AI Weekly. All rights reserved.
+              © 2024 Newsletter. All rights reserved.
             </p>
           </div>
         </div>
