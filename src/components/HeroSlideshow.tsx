@@ -112,7 +112,7 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
       <div className="relative z-10 max-w-6xl mx-28 px-4 py-20">
         <div className="space-y-8 max-w-4xl text-left">
           {/* Main Title */}
-          <h1 className="text-5xl md:text-6xl lg:text-6xl font-montserrat font-black leading-tight animate-fade-in">
+          <h1 className="text-5xl md:text-6xl lg:text-5xl font-montserrat font-black leading-tight animate-fade-in">
             <span className="text-white text-shadow-lg">{title}</span>
           </h1>
 
@@ -124,7 +124,7 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
           {/* CTA Button */}
           <a
             href="#contact"
-            className="bg-gradient-to-r from-accent-orange to-accent-pink hover:from-accent-pink hover:to-accent-orange text-white px-8 py-3 rounded-xl font-montserrat font-bold text-xl transition-all duration-300 transform hover:scale-110 shadow-2xl backdrop-blur-sm inline-block"
+            className="bg-gradient-to-r from-accent-orange to-accent-pink hover:from-accent-pink hover:to-accent-orange text-white px-5 py-2 rounded-xl font-montserrat font-bold text-lg transition-all duration-300 transform hover:scale-110 shadow-2xl backdrop-blur-sm inline-block"
           >
             {ctaText}
           </a>

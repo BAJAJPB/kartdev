@@ -31,7 +31,7 @@ function App() {
       <div id="home">
         <HeroSlideshow 
           title="Nivedan Rathi"
-          subtitle="AI Strategy Architect & Global Tech Innovator"
+          subtitle="Artificial Intelligence Consultant & International Speaker"
           ctaText="Contact Now"
           ctaLink="https://wa.me/916377589749" tagline={''}        />
       </div>
@@ -39,7 +39,7 @@ function App() {
       <Statistics statistics={statistics} />
       
       <OurClients 
-        title="Brands that trust us"
+        title="Brands that Trust Us"
         brands={brandsThatTrustUs} 
       />
       

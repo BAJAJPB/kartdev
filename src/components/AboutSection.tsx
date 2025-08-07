@@ -15,16 +15,14 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
   profileImage
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  
-  const newDescription = `A rare blend of technical virtuosity and strategic vision, Nivedan Rathi transforms how enterprises harness AI's potential.  
 
-From IIT Bombay to pioneering AI-driven quality control at Agrix Labs, and scaling Meesho during its hypergrowth phase, his journey reflects breakthrough innovation at every turn.  
+  const newDescription = `A rare blend of technical virtuosity and strategic vision, Nivedan Rathi transforms how enterprises harness AI's potential. From IIT Bombay to pioneering AI-driven quality control at Agrix Labs, and scaling Meesho during its hypergrowth phase, his journey reflects breakthrough innovation at every turn.
 
-Today, he's the strategic counsel behind AI transformation for industry titans like Kishore Biyani, architecting frameworks that integrate AI into organizational DNA.`;
+Today, he's the strategic counsel behind AI transformation for industry titans like Kishore Biyani, architecting frameworks that integrate AI into organizational DNA.`; 
 
-const hiddenContent = `His acclaimed masterclass at NTU Singapore on "The New Value & Skill Stack in the Post-AI World" stands testament to his ability to decode AI's business impact with precision and foresight.  
+const hiddenContent = `His acclaimed masterclass at NTU Singapore on "The New Value & Skill Stack in the Post-AI World" stands testament to his ability to decode AI's business impact with precision and foresight.
 
-Beyond his 70+ global keynotes, Nivedan leads the "AI Powered Entrepreneurs" community and designs next-generation AI curriculum, pursuing one mission: unlocking unprecedented value at the intersection of human creativity and artificial intelligence.  
+Beyond his 70+ global keynotes, Nivedan leads the "AI Powered Entrepreneurs" community and designs next-generation AI curriculum, pursuing one mission: unlocking unprecedented value at the intersection of human creativity and artificial intelligence.
 
 For leaders seeking to transform AI complexity into competitive advantage, Nivedan brings battle-tested expertise in crafting actionable strategies that deliver measurable impact.`;
   return (
@@ -32,7 +30,7 @@ For leaders seeking to transform AI complexity into competitive advantage, Nived
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
-          <div className="space-y-8 animate-fade-in">
+          <div className="space-y-5 animate-fade-in">
             <h2 className="text-4xl font-montserrat font-bold text-primary-500 animate-slide-up">
               {title}
             </h2>
@@ -76,7 +74,7 @@ For leaders seeking to transform AI complexity into competitive advantage, Nived
           </div>
 
           {/* Profile Image */}
-          <div className="relative animate-scale-in max-w-md">
+          <div className="relative animate-scale-in max-w-sm">
             <div className="bg-gradient-to-br from-accent-orange/20 to-accent-pink/20 rounded-3xl p-6 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105">
               <img 
                 src={profileImage}
@@ -91,34 +89,34 @@ For leaders seeking to transform AI complexity into competitive advantage, Nived
 
         {/* Four Achievement Badges with Images Only */}
         <div className="mt-20 animate-fade-in">
-          <div className="bg-white rounded-3xl p-8 shadow-lg">
+          <div>
             <div className="flex justify-center items-center space-x-20 flex-wrap gap-8">
               {/* Alumnus */}
               <img
                 src="/lovable-uploads/alumnus.jpg"
                 alt="Alumnus"
-                className="w-32 h-32 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+                className="w-36 h-36 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
               />
               
               {/* Ex-Meesho */}
               <img
                 src="/lovable-uploads/exmeesho.jpg"
                 alt="Ex-Meesho"
-                className="w-32 h-32 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+                className="w-36 h-36 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
               />
               
               {/* Speaker */}
               <img
                 src="/lovable-uploads/speaker.jpg"
                 alt="Speaker"
-                className="w-32 h-32 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+                className="w-36 h-36 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
               />
               
               {/* Angel Investor */}
               <img
                 src="/lovable-uploads/angel investor.jpg"
                 alt="Angel Investor"
-                className="w-32 h-32 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
+                className="w-36 h-36 rounded-full object-cover transform hover:scale-110 transition-all duration-300"
               />
             </div>
           </div>

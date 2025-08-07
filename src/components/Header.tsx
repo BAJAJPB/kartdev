@@ -11,7 +11,7 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ navigation }) => {
   return (
-    <header className="bg-blue-950 bg-gradient-to-r backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-lg">
+    <header className="bg-black bg-gradient-to-r backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Navigation Links */}

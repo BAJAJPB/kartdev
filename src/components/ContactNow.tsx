@@ -97,7 +97,7 @@ export default function ContactUs() {
                     <div className="space-y-4">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-200 mb-2">
-                          Name *
+                          Name
                         </label>
                         <Input
                           id="name"
@@ -143,7 +143,7 @@ export default function ContactUs() {
 
                       <div>
                         <label htmlFor="email" className="block text-sm font-medium text-gray-200 mb-2">
-                          E-Mail *
+                          E-Mail
                         </label>
                         <Input
                           id="email"

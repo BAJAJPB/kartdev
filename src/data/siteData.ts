@@ -11,7 +11,6 @@ export const navigationItems: NavigationItem[] = [
   { label: "Home", href: "#home" },
   { label: "Offerings", href: "#offerings" },
   { label: "About", href: "#about" },
-  { label: "Gallery", href: "#gallery" },
   { label: "Contact", href: "#contact" }
 ];
 
@@ -55,10 +54,10 @@ export const serviceCards: ServiceCard[] = [
 export const ourOfferings: ServiceDetailCard[] = [
   {
     id: "consultation",
-    title: "One-on-One Strategy Consultation for CEOs",
+    title: "Strategic Consulting for CEOs",
     description: "Navigate AI transformation with personalized guidance",
     features: [
-      "Featured Clients: Think9, Athena",
+      "Client Portfolio: Think9, Athena",
       "Exclusive one-on-one consultations helping CEOs transform their AI vision into strategic roadmaps and actionable implementation plans."
     ],
     buttonText: "Book Consultation",
@@ -71,7 +70,7 @@ export const ourOfferings: ServiceDetailCard[] = [
     title: "Training & Workshops",
     description: "Empower your team with an AI training workshop",
     features: [
-      "Featured Clients: Adani, Microsoft, upGrad, GrowthSchool",
+      "Client Portfolio: Adani, Microsoft, upGrad, GrowthSchool",
       "Tailored AI workshops that equip teams with practical skills to implement and scale AI solutions across business functions."
     ],
     buttonText: "Book Workshop",
@@ -80,24 +79,11 @@ export const ourOfferings: ServiceDetailCard[] = [
     bgColor: "bg-gradient-to-br from-purple-50 to-pink-100"
   },
   {
-    id: "speaking",
-    title: "Public Speaking",
-    description: "Nivedan has delivered 70+ talks on Global Stages",
-    features: [
-      "Featured Clients: TEDx, IITB, IIWC Thailand, NTU Singapore (MBA), Whistling Woods, Formidium, EO",
-      "Global keynote speaker on AI transformation, reaching 10,000+ business leaders across 70+ talks at corporate events and beyond."
-    ],
-    buttonText: "Book Speaking",
-    buttonLink: "https://wa.me/916377589749",
-    imageUrl: "Public Speaking.JPG",
-    bgColor: "bg-gradient-to-br from-green-50 to-emerald-100"
-  },
-  {
     id: "ai-poc",
     title: "AI POC for Enterprises",
     description: "Get Scalable AI Solutions within 2 weeks",
     features: [
-      "Featured Clients: PAR, Aditya Birla, Bajaj Finserv, Polar AI",
+      "Client Portfolio: PAR, Aditya Birla, Bajaj Finserv, Polar AI",
       "Fast-track AI implementation with enterprise-grade POCs, delivering validated solutions ready for scaling"
     ],
     buttonText: "Request POC",
@@ -106,12 +92,25 @@ export const ourOfferings: ServiceDetailCard[] = [
     bgColor: "bg-gradient-to-br from-orange-50 to-red-100"
   },
   {
+    id: "speaking",
+    title: "Speaking Engagements",
+    description: "Nivedan has delivered 70+ talks on Global Stages",
+    features: [
+      "Client Portfolio: TEDx, IITB, IIWC Thailand, NTU Singapore (MBA), Whistling Woods, Formidium, HR Conclave, IIDE, Jagruk Fest",
+      "Transforming complex AI concepts into actionable insights - from inspiring teenagers to empowering CEOs"
+    ],
+    buttonText: "Book Speaking", 
+    buttonLink: "https://wa.me/916377589749",
+    imageUrl: "Public Speaking.JPG",
+    bgColor: "bg-gradient-to-br from-green-50 to-emerald-100"
+  },
+  {
     id: "newsletter",
     title: "Newsletter",
     description: "Get weekly actionable AI strategies",
     features: [
-      "Join 500K+ subscribers getting the latest AI tools and insights",
-      "Weekly digest of AI trends, tools, and practical applications for business growth"
+      "Get weekly actionable AI strategies",
+      "Stay ahead with curated AI trends, breakthroughs, and tools delivered straight to your inbox."
     ],
     buttonText: "Subscribe Free",
     buttonLink: "#newsletter",
@@ -123,8 +122,8 @@ export const ourOfferings: ServiceDetailCard[] = [
     title: "APEs Community",
     description: "Exclusive Network of AI-First Entrepreneurs",
     features: [
-      "Connect with 10K+ AI-powered entrepreneurs and leaders",
-      "Access exclusive resources, networking events, and collaborative opportunities"
+      "Exclusive Network of AI-First Entrepreneurs",
+      "Scale your entrepreneurial journey with workshops, expert guidance, and a vibrant community committed to innovation and growth."
     ],
     buttonText: "Join Community",
     buttonLink: "https://link.lla.in/Community-2",

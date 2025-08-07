@@ -48,14 +48,14 @@ export default function WeeklyAINewsletter() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Newsletter Section */}
-      <section className="py-16 px-6 md:px-8 lg:px-12">
+      <section className="py-16 px-6 md:px-8 lg:px-12" id="subscribe">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left side - Content */}
             <div className="space-y-6">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                <span className="text-blue-700">Weekly AI Newsletter:</span>{" "}
-                <span className="text-white">Subscribe Today</span>
+              <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold leading-tight">
+                <span className="text-blue-700 block">Weekly AI Newsletter:</span>
+                <span className="text-white block mt-3">Subscribe Today</span>
               </h1>
 
               <p className="text-lg md:text-xl leading-relaxed text-gray-300">
@@ -94,7 +94,7 @@ export default function WeeklyAINewsletter() {
                   type="text"
                   id="jobDesignation"
                   name="jobDesignation"
-                  label="Job Designation"
+                  label="Job Designation*"
                   value={formData.jobDesignation}
                   onChange={handleInputChange}
                   placeholder="e.g., Software Engineer, Marketing Manager"
@@ -105,7 +105,7 @@ export default function WeeklyAINewsletter() {
                   type="text"
                   id="company"
                   name="company"
-                  label="Company"
+                  label="Company*"
                   value={formData.company}
                   onChange={handleInputChange}
                   placeholder="Enter your company name"
