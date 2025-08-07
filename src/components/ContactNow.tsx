@@ -104,7 +104,7 @@ export default function ContactUs() {
                           value={formData.name}
                           onChange={handleInputChange}
                           required
-                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-300 focus:border-blue-400 focus:ring-blue-400"
+                          className="bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:border-blue-400 focus:ring-blue-400"
                         />
                       </div>
 
@@ -119,7 +119,7 @@ export default function ContactUs() {
                           placeholder="Your website or company name"
                           value={formData.website}
                           onChange={handleInputChange}
-                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-300 focus:border-blue-400 focus:ring-blue-400"
+                          className="bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:border-blue-400 focus:ring-blue-400"
                         />
                       </div>
 
@@ -134,7 +134,7 @@ export default function ContactUs() {
                           placeholder="Your job title or role"
                           value={formData.designation}
                           onChange={handleInputChange}
-                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-300 focus:border-blue-400 focus:ring-blue-400"
+                          className="bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:border-blue-400 focus:ring-blue-400"
                         />
                       </div>
 
@@ -150,23 +150,23 @@ export default function ContactUs() {
                           value={formData.email}
                           onChange={handleInputChange}
                           required
-                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-300 focus:border-blue-400 focus:ring-blue-400"
+                          className="bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:border-blue-400 focus:ring-blue-400"
                         />
                       </div>
 
                       <div>
                         <label htmlFor="message" className="block text-sm font-medium text-gray-200 mb-2">
-                          Message *
+                          Message
                         </label>
                         <Textarea
                           id="message"
                           name="message"
-                          placeholder="Tell us about your project or inquiry..."
+                          placeholder="Feel free to reach out..."
                           value={formData.message}
                           onChange={handleInputChange}
                           required
                           rows={4}
-                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-300 focus:border-blue-400 focus:ring-blue-400 resize-none"
+                          className="bg-white/10 border-white/30 text-white placeholder:text-white/60 focus:border-blue-400 focus:ring-blue-400 resize-none"
                         />
                       </div>
                     </div>

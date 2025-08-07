@@ -62,7 +62,7 @@ export const ourOfferings: ServiceDetailCard[] = [
     ],
     buttonText: "Book Consultation",
     buttonLink: "https://calendly.com/atray-lla/alignmentcall",
-    imageUrl: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?w=400&h=500&fit=crop&crop=center",
+    imageUrl: "/strategic.jpeg",
     bgColor: "bg-gradient-to-br from-blue-50 to-indigo-100"
   },
   {

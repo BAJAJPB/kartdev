@@ -129,18 +129,12 @@ export default function WeeklyAINewsletter() {
       {/* Footer */}
       <footer className="bg-gray-900 py-12 px-6 md:px-8 lg:px-12 mt-16">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-            {/* Brand Name */}
-            <div>
-              <h3 className="text-2xl font-bold text-blue-500">Newsletter</h3>
-            </div>
-          </div>
           <ContactNow />
 
           {/* Copyright */}
           <div className="mt-8 pt-8 border-t border-gray-700 text-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Newsletter. All rights reserved.
+              © 2023 Newsletter. All rights reserved.
             </p>
           </div>
         </div>
