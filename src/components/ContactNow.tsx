@@ -17,7 +17,6 @@ export default function ContactUs() {
     message: "",
   })
   const [showConfirmation, setShowConfirmation] = useState(false)
-  const [showEmailReveal, setShowEmailReveal] = useState(false)
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -49,49 +48,47 @@ export default function ContactUs() {
     setShowConfirmation(false)
   }
 
-  const toggleEmailReveal = () => {
-    setShowEmailReveal(!showEmailReveal)
-  }
-
   return (
     <>
-      <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-16 px-6 md:px-8 lg:px-12 min-h-screen" id="contact">
+      <section className="bg-gradient-to-br from-indigo-950 via-purple-900 to-blue-950 text-white py-16 px-6 md:px-8 lg:px-12 min-h-screen" id="contact">
         <div className="max-w-6xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+              Contact Us
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto rounded-full"></div>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Left side - Content */}
+            {/* Left side - Contact Information */}
             <div className="space-y-8">
-
-              {/* Email Reveal Section */}
-              <div className="space-y-4">
-                <Button
-                  onClick={toggleEmailReveal}
-                  className="bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors flex items-center gap-2"
-                >
-                  <Mail className="w-5 h-5" />
-                  Contact Us
-                </Button>
-
-                {showEmailReveal && (
-                  <Card className="bg-slate-800 border-slate-700">
-                    <CardContent className="p-6">
-                      <div className="space-y-3">
-                        <div className="flex items-center gap-2">
-                          <Mail className="w-4 h-4 text-blue-400" />
-                          <span className="text-sm text-gray-400">Primary Contact:</span>
-                        </div>
-                        <p className="text-white font-medium">contact@futureandai.com</p>
-                        <p className="text-sm text-gray-400">(Direct: nivedan@futureandai.com)</p>
-                        <p className="text-sm text-gray-400">CC: team@futureandai.com</p>
+              <Card className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 backdrop-blur-sm border-blue-500/20">
+                <CardContent className="p-8">
+                  <div className="space-y-6">
+                    <div className="text-center">
+                      <h3 className="text-2xl font-bold text-white mb-2">Nivedan Rathi</h3>
+                      <p className="text-blue-300 text-lg font-medium mb-1">AI Strategy Architect & Global Tech Innovator</p>
+                      <p className="text-purple-300 mb-4">Jaipur, Rajasthan</p>
+                      
+                      <div className="flex items-center justify-center gap-2 text-white">
+                        <Mail className="w-5 h-5 text-blue-400" />
+                        <a 
+                          href="mailto:nivedan@futureandai.com" 
+                          className="hover:text-blue-300 transition-colors"
+                        >
+                          nivedan@futureandai.com
+                        </a>
                       </div>
-                    </CardContent>
-                  </Card>
-                )}
-              </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
 
             {/* Right side - Contact Form */}
             <div className="flex justify-center lg:justify-end">
-              <Card className="w-full max-w-lg bg-white/10 backdrop-blur-sm border-white/20">
+              <Card className="w-full max-w-lg bg-gradient-to-br from-blue-900/40 to-purple-900/40 backdrop-blur-sm border-blue-500/30">
                 <CardContent className="p-8">
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-4">
@@ -176,7 +173,7 @@ export default function ContactUs() {
 
                     <Button
                       type="submit"
-                      className="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 rounded-lg transition-colors"
+                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 rounded-lg transition-all duration-300"
                     >
                       Submit
                     </Button>

@@ -117,19 +117,19 @@ export const ourOfferings: ServiceDetailCard[] = [
     imageUrl: "https://static.wixstatic.com/media/c04408_533553efa42f4aebbeab3b674e2b4d52~mv2.jpg/v1/fill/w_400,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c04408_533553efa42f4aebbeab3b674e2b4d52~mv2.jpg",
     bgColor: "bg-gradient-to-br from-yellow-50 to-amber-100"
   },
-  {
-    id: "community",
-    title: "APEs Community",
-    description: "Exclusive Network of AI-First Entrepreneurs",
-    features: [
-      "Exclusive Network of AI-First Entrepreneurs",
-      "Scale your entrepreneurial journey with workshops, expert guidance, and a vibrant community committed to innovation and growth."
-    ],
-    buttonText: "Join Community",
-    buttonLink: "https://link.lla.in/Community-2",
-    imageUrl: "APE's Community.jpg",
-    bgColor: "bg-gradient-to-br from-teal-50 to-cyan-100"
-  }
+    {
+      id: "community",
+      title: "APEs Community",
+      description: "Exclusive Network of AI-First Entrepreneurs",
+      features: [
+        "Exclusive Network of AI-First Entrepreneurs",
+        "Scale your entrepreneurial journey with workshops, expert guidance, and a vibrant community committed to innovation and growth."
+      ],
+      buttonText: "Join Community",
+      buttonLink: "https://link.lla.in/Community-2",
+      imageUrl: "APE's Community.jpg",
+      bgColor: "bg-gradient-to-br from-teal-50 to-cyan-100"
+    }
 ];
 
 export const serviceDetailCards: ServiceDetailCard[] = [

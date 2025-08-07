@@ -1,5 +1,4 @@
 import React from 'react';
-import { ContactForm } from './ContactForm';
 
 interface CtaSectionProps {
   title: string;
@@ -36,9 +35,12 @@ export const CtaSection: React.FC<CtaSectionProps> = ({
             </button>
           </div>
 
-          {/* Right Column - Contact Form */}
+          {/* Right Column - Placeholder */}
           <div className="animate-fade-in">
-            <ContactForm />
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center">
+              <h3 className="text-2xl font-bold mb-4">Ready to Transform?</h3>
+              <p className="text-white/90">Let's discuss your AI strategy and implementation needs.</p>
+            </div>
           </div>
         </div>
       </div>

@@ -115,7 +115,7 @@ export default function WeeklyAINewsletter() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-blue-700 text-white hover:bg-blue-800 transition-colors duration-200"
+                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white transition-all duration-300"
                   size="lg"
                 >
                   {isSubmitting ? "Submitting..." : "Submit"}
