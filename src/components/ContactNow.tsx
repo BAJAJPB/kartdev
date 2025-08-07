@@ -55,7 +55,7 @@ export default function ContactUs() {
 
   return (
     <>
-      <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-16 px-6 md:px-8 lg:px-12 min-h-screen">
+      <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-16 px-6 md:px-8 lg:px-12 min-h-screen" id="contact">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left side - Content */}
@@ -65,7 +65,7 @@ export default function ContactUs() {
               <div className="space-y-4">
                 <Button
                   onClick={toggleEmailReveal}
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors flex items-center gap-2"
+                  className="bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors flex items-center gap-2"
                 >
                   <Mail className="w-5 h-5" />
                   Contact Us
@@ -107,7 +107,7 @@ export default function ContactUs() {
                           value={formData.name}
                           onChange={handleInputChange}
                           required
-                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-400 focus:border-blue-400 focus:ring-blue-400"
+                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-300 focus:border-blue-400 focus:ring-blue-400"
                         />
                       </div>
 
@@ -122,7 +122,7 @@ export default function ContactUs() {
                           placeholder="Your website or company name"
                           value={formData.website}
                           onChange={handleInputChange}
-                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-400 focus:border-blue-400 focus:ring-blue-400"
+                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-300 focus:border-blue-400 focus:ring-blue-400"
                         />
                       </div>
 
@@ -137,7 +137,7 @@ export default function ContactUs() {
                           placeholder="Your job title or role"
                           value={formData.designation}
                           onChange={handleInputChange}
-                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-400 focus:border-blue-400 focus:ring-blue-400"
+                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-300 focus:border-blue-400 focus:ring-blue-400"
                         />
                       </div>
 
@@ -153,7 +153,7 @@ export default function ContactUs() {
                           value={formData.email}
                           onChange={handleInputChange}
                           required
-                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-400 focus:border-blue-400 focus:ring-blue-400"
+                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-300 focus:border-blue-400 focus:ring-blue-400"
                         />
                       </div>
 
@@ -169,14 +169,14 @@ export default function ContactUs() {
                           onChange={handleInputChange}
                           required
                           rows={4}
-                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-400 focus:border-blue-400 focus:ring-blue-400 resize-none"
+                          className="bg-white/10 border-white/30 text-white placeholder:text-gray-300 focus:border-blue-400 focus:ring-blue-400 resize-none"
                         />
                       </div>
                     </div>
 
                     <Button
                       type="submit"
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-colors"
+                      className="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 rounded-lg transition-colors"
                     >
                       Submit
                     </Button>
@@ -205,7 +205,7 @@ export default function ContactUs() {
                 </p>
                 <Button
                   onClick={closeConfirmation}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg"
+                  className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-lg"
                 >
                   Close
                 </Button>

@@ -115,7 +115,7 @@ export default function WeeklyAINewsletter() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-blue-800 text-white hover:bg-blue-600 transition-colors duration-200"
+                  className="w-full bg-blue-700 text-white hover:bg-blue-800 transition-colors duration-200"
                   size="lg"
                 >
                   {isSubmitting ? "Submitting..." : "Submit"}
@@ -132,23 +132,7 @@ export default function WeeklyAINewsletter() {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
             {/* Brand Name */}
             <div>
-              <h3 className="text-2xl font-bold text-yellow-400">AI Weekly</h3>
-            </div>
-
-            {/* Navigation Links */}
-            <div className="flex space-x-8">
-              <a
-                href="/tools"
-                className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
-              >
-                Tools
-              </a>
-              <a
-                href="/contact"
-                className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
-              >
-                Contact us
-              </a>
+              <h3 className="text-2xl font-bold text-blue-500">AI Weekly</h3>
             </div>
           </div>
           <ContactNow />

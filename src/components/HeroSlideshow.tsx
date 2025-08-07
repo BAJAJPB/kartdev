@@ -32,7 +32,6 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
   title,
   subtitle,
   ctaText,
-  ctaLink,
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
@@ -123,12 +122,12 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
           </p>
 
           {/* CTA Button */}
-          <button
-            onClick={() => window.open(ctaLink, "_blank")}
-            className="bg-gradient-to-r from-accent-orange to-accent-pink hover:from-accent-pink hover:to-accent-orange text-white px-8 py-3 rounded-xl font-montserrat font-bold text-xl transition-all duration-300 transform hover:scale-110 shadow-2xl backdrop-blur-sm"
+          <a
+            href="#contact"
+            className="bg-gradient-to-r from-accent-orange to-accent-pink hover:from-accent-pink hover:to-accent-orange text-white px-8 py-3 rounded-xl font-montserrat font-bold text-xl transition-all duration-300 transform hover:scale-110 shadow-2xl backdrop-blur-sm inline-block"
           >
             {ctaText}
-          </button>
+          </a>
         </div>
       </div>
 
