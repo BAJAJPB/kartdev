@@ -2,11 +2,10 @@
 
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import ContactNow from "./ContactNow";
 
 export default function WeeklyAINewsletter() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="bg-black text-white">
       {/* Newsletter Section */}
       <section className="py-16 px-6 md:px-8 lg:px-12" id="subscribe">
         <div className="max-w-6xl mx-auto">
@@ -91,20 +90,6 @@ export default function WeeklyAINewsletter() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 py-12 px-6 md:px-8 lg:px-12 mt-16">
-        <div className="max-w-6xl mx-auto">
-          <ContactNow />
-
-          {/* Copyright */}
-          <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-            <p className="text-gray-400 text-sm">
-              © 2023 Newsletter. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

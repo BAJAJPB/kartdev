@@ -20,7 +20,9 @@ export default function ContactUs() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const { toast } = useToast()
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target
     setFormData((prev) => ({
       ...prev,
@@ -52,10 +54,9 @@ export default function ContactUs() {
       if (response.ok) {
         toast({
           title: "Success!",
-          description: "The form has been submitted successfully",
+          description: "Thank you for reaching out to us. We will get back to you shortly. Kindly refresh the page",
         })
-        
-        // Reset form
+
         setFormData({
           name: "",
           website: "",
@@ -79,7 +80,10 @@ export default function ContactUs() {
 
   return (
     <>
-      <section className="bg-gradient-to-br from-indigo-950 via-purple-900 to-blue-950 text-white py-16 px-6 md:px-8 lg:px-12 min-h-screen" id="contact">
+      <section
+        className="bg-gradient-to-br from-indigo-950 via-purple-900 to-blue-950 text-white py-16 px-6 md:px-8 lg:px-12 min-h-screen"
+        id="contact"
+      >
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -90,20 +94,24 @@ export default function ContactUs() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Left side - Contact Information */}
+            {/* Left side */}
             <div className="space-y-8">
               <Card className="bg-white/5 backdrop-blur-lg border-white/10">
                 <CardContent className="p-8">
                   <div className="space-y-6">
                     <div className="text-center">
-                      <h3 className="text-2xl font-bold text-white mb-2">Nivedan Rathi</h3>
-                      <p className="text-blue-300 text-lg font-medium mb-1">AI Strategy Architect & Global Tech Innovator</p>
+                      <h3 className="text-2xl font-bold text-white mb-2">
+                        Nivedan Rathi
+                      </h3>
+                      <p className="text-blue-300 text-lg font-medium mb-1">
+                        AI Strategy Architect & Global Tech Innovator
+                      </p>
                       <p className="text-purple-300 mb-4">Jaipur, Rajasthan</p>
-                      
+
                       <div className="flex items-center justify-center gap-2 text-white">
                         <Mail className="w-5 h-5 text-blue-400" />
-                        <a 
-                          href="mailto:nivedan@futureandai.com" 
+                        <a
+                          href="mailto:nivedan@futureandai.com"
                           className="hover:text-blue-300 transition-colors"
                         >
                           nivedan@futureandai.com
@@ -115,14 +123,17 @@ export default function ContactUs() {
               </Card>
             </div>
 
-            {/* Right side - Contact Form */}
+            {/* Right side */}
             <div className="flex justify-center lg:justify-end">
               <Card className="w-full max-w-lg bg-white/5 backdrop-blur-lg border-white/10">
                 <CardContent className="p-8">
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-4">
                       <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-gray-200 mb-2">
+                        <label
+                          htmlFor="name"
+                          className="block text-sm font-medium text-gray-200 mb-2"
+                        >
                           Name
                         </label>
                         <Input
@@ -138,7 +149,10 @@ export default function ContactUs() {
                       </div>
 
                       <div>
-                        <label htmlFor="website" className="block text-sm font-medium text-gray-200 mb-2">
+                        <label
+                          htmlFor="website"
+                          className="block text-sm font-medium text-gray-200 mb-2"
+                        >
                           Website/Company
                         </label>
                         <Input
@@ -153,7 +167,10 @@ export default function ContactUs() {
                       </div>
 
                       <div>
-                        <label htmlFor="designation" className="block text-sm font-medium text-gray-200 mb-2">
+                        <label
+                          htmlFor="designation"
+                          className="block text-sm font-medium text-gray-200 mb-2"
+                        >
                           Designation
                         </label>
                         <Input
@@ -168,7 +185,10 @@ export default function ContactUs() {
                       </div>
 
                       <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-200 mb-2">
+                        <label
+                          htmlFor="email"
+                          className="block text-sm font-medium text-gray-200 mb-2"
+                        >
                           E-Mail
                         </label>
                         <Input
@@ -184,7 +204,10 @@ export default function ContactUs() {
                       </div>
 
                       <div>
-                        <label htmlFor="message" className="block text-sm font-medium text-gray-200 mb-2">
+                        <label
+                          htmlFor="message"
+                          className="block text-sm font-medium text-gray-200 mb-2"
+                        >
                           Message
                         </label>
                         <Textarea
@@ -215,6 +238,12 @@ export default function ContactUs() {
         </div>
       </section>
 
+      {/* Footer */}
+      <footer className="bg-black py-6 text-center text-gray-400 border-t border-gray-800">
+        <p className="text-sm">
+          © 2023 AI with Nivedan. All rights reserved.
+        </p>
+      </footer>
     </>
   )
 }
