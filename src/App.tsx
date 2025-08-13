@@ -14,6 +14,8 @@ import {
   galleryImages
 } from './data/siteData';
 import NewsletterSubscription from './components/newsletter-subscription';
+import ContactNow from './components/ContactNow';
+import { Toaster } from './components/ui/toaster';
 
 function App() {
   const logoUrl = "https://static.wixstatic.com/media/c04408_a515c4b0b2a843e78a63a3f1a57a1f41~mv2.png/v1/crop/x_119,y_436,w_811,h_203/fill/w_149,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c04408_a515c4b0b2a843e78a63a3f1a57a1f41~mv2.png";
@@ -74,6 +76,8 @@ function App() {
         />
       </div>
       <NewsletterSubscription />
+      <ContactNow />
+      <Toaster />
     </div>
   );
 }

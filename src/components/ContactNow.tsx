@@ -6,7 +6,8 @@ import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { Textarea } from "./ui/textarea"
 import { Card, CardContent } from "./ui/card"
-import { Mail, X } from "lucide-react"
+import { Mail } from "lucide-react"
+import { useToast } from "../hooks/use-toast"
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -16,7 +17,8 @@ export default function ContactUs() {
     email: "",
     message: "",
   })
-  const [showConfirmation, setShowConfirmation] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const { toast } = useToast()
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -26,26 +28,53 @@ export default function ContactUs() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission logic here
-    console.log("Form submitted:", formData)
+    setIsSubmitting(true)
 
-    // Show confirmation popup
-    setShowConfirmation(true)
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "498721e2-e465-4bec-aac0-8b60ba275e8e",
+          name: formData.name,
+          email: formData.email,
+          website: formData.website,
+          designation: formData.designation,
+          message: formData.message,
+        }),
+      })
 
-    // Reset form
-    setFormData({
-      name: "",
-      website: "",
-      designation: "",
-      email: "",
-      message: "",
-    })
-  }
-
-  const closeConfirmation = () => {
-    setShowConfirmation(false)
+      if (response.ok) {
+        toast({
+          title: "Success!",
+          description: "The form has been submitted successfully",
+        })
+        
+        // Reset form
+        setFormData({
+          name: "",
+          website: "",
+          designation: "",
+          email: "",
+          message: "",
+        })
+      } else {
+        throw new Error("Form submission failed")
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to submit form. Please try again.",
+        variant: "destructive",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -173,9 +202,10 @@ export default function ContactUs() {
 
                     <Button
                       type="submit"
-                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 rounded-lg transition-all duration-300"
+                      disabled={isSubmitting}
+                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 rounded-lg transition-all duration-300 disabled:opacity-70"
                     >
-                      Submit
+                      {isSubmitting ? "Submitting..." : "Submit"}
                     </Button>
                   </form>
                 </CardContent>
@@ -185,35 +215,6 @@ export default function ContactUs() {
         </div>
       </section>
 
-      {/* Confirmation Popup */}
-      {showConfirmation && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-          <Card className="w-full max-w-md bg-white">
-            <CardContent className="p-8 text-center">
-              <div className="space-y-4">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
-                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900">Thank You!</h3>
-                <p className="text-gray-600">
-                  Thank you for reaching out to us. We've received your submission and will get back to you shortly.
-                </p>
-                <Button
-                  onClick={closeConfirmation}
-                  className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-lg"
-                >
-                  Close
-                </Button>
-              </div>
-              <button onClick={closeConfirmation} className="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
-                <X className="w-5 h-5" />
-              </button>
-            </CardContent>
-          </Card>
-        </div>
-      )}
     </>
   )
 }
