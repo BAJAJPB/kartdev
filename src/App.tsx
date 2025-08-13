@@ -14,7 +14,6 @@ import {
   galleryImages
 } from './data/siteData';
 import NewsletterSubscription from './components/newsletter-subscription';
-import ContactNow from './components/ContactNow';
 import { Toaster } from './components/ui/toaster';
 
 function App() {
@@ -76,7 +75,6 @@ function App() {
         />
       </div>
       <NewsletterSubscription />
-      <ContactNow />
       <Toaster />
     </div>
   );

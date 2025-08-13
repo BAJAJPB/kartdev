@@ -9,7 +9,7 @@ export default function WeeklyAINewsletter() {
       {/* Newsletter Section */}
       <section className="py-16 px-6 md:px-8 lg:px-12" id="subscribe">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-12 items-center">
             {/* Left side - Content */}
             <div className="space-y-6">
               <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold leading-tight">
@@ -30,7 +30,7 @@ export default function WeeklyAINewsletter() {
                 action="https://emails.lla.in/subscribe"
                 method="POST"
                 acceptCharset="utf-8"
-                className="space-y-4"
+                className="space-y-8"
               >
                 <Input
                   type="text"
@@ -45,22 +45,6 @@ export default function WeeklyAINewsletter() {
                   id="email"
                   name="email"
                   placeholder="Enter your email address"
-                  required
-                />
-
-                <Input
-                  type="text"
-                  id="JobDesignation"
-                  name="JobDesignation"
-                  placeholder="e.g., Software Engineer, Marketing Manager"
-                  required
-                />
-
-                <Input
-                  type="text"
-                  id="Company"
-                  name="Company"
-                  placeholder="Enter your company name"
                   required
                 />
 
@@ -90,6 +74,13 @@ export default function WeeklyAINewsletter() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-black border-t border-gray-700 py-4">
+        <div className="max-w-6xl mx-auto px-6 md:px-8 lg:px-12 text-center text-gray-400 text-sm">
+          © 2023 Nivedan Rathi. All rights reserved.
+        </div>
+      </footer>
     </div>
   );
 }

@@ -123,7 +123,7 @@ export const HeroSlideshow: React.FC<HeroSlideshowProps> = ({
 
           {/* CTA Button */}
           <a
-            href="#contact"
+            href="mailto:nivedan@futureandai.com?cc=team@futureandai.com"
             className="bg-gradient-to-r from-accent-orange to-accent-pink hover:from-accent-pink hover:to-accent-orange text-white px-5 py-2 rounded-xl font-montserrat font-bold text-lg transition-all duration-300 transform hover:scale-110 shadow-2xl backdrop-blur-sm inline-block"
           >
             {ctaText}

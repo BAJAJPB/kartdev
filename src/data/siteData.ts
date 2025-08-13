@@ -11,7 +11,7 @@ export const navigationItems: NavigationItem[] = [
   { label: "Home", href: "#home" },
   { label: "Offerings", href: "#offerings" },
   { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" }
+  { label: "Subscribe", href: "#subscribe" }
 ];
 
 export const statistics: StatisticItem[] = [

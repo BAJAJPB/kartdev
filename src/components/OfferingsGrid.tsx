@@ -37,16 +37,16 @@ export const OfferingsGrid: React.FC<OfferingsGridProps> = ({ title, offerings }
               </div>
 
               {/* Content Container */}
-              <div className={`${offering.bgColor} p-8 relative min-h-64 rounded-2xl`}>
+              <div className={`${offering.bgColor} p-4 relative min-h-80 rounded-2xl`}>
                 {/* Title */}
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-800 transition-colors duration-200">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-gray-800 transition-colors duration-200">
                   {offering.title}
                 </h3>
                 
                 {/* Features */}
                 <div className="space-y-2">
                   {offering.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="text-gray-600 text-sm leading-relaxed">
+                    <div key={featureIndex} className="text-gray-600 text-lg leading-relaxed">
                       {feature.startsWith('Featured Clients:') ? (
                         <div className="font-semibold text-blue-700 mb-2">
                           {feature}

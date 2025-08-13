@@ -25,7 +25,7 @@ export const OurClients: React.FC<OurClientsProps> = ({
           {brands.map((brand, index) => (
             <div
               key={index}
-              className="flex items-center justify-center w-full h-20 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer"
+              className="flex items-center justify-center w-full h-20 bg-white rounded-lg transition-all duration-300 transform hover:scale-105 cursor-pointer"
               onClick={() => setSelectedBrand(brand)}
             >
               <img
