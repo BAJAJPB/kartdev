@@ -1,50 +1,10 @@
 "use client";
 
-import type React from "react";
-
-import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import ContactNow from "./ContactNow";
 
-interface FormData {
-  fullName: string;
-  email: string;
-  jobDesignation: string;
-  company: string;
-}
-
 export default function WeeklyAINewsletter() {
-  const [formData, setFormData] = useState<FormData>({
-    fullName: "",
-    email: "",
-    jobDesignation: "",
-    company: "",
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    // Redirect to confirmation page (you can change this URL)
-    window.location.href = "/thank-you";
-
-    setIsSubmitting(false);
-  };
-
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Newsletter Section */}
@@ -67,14 +27,16 @@ export default function WeeklyAINewsletter() {
 
             {/* Right side - Form */}
             <div className="bg-gray-900 p-8 rounded-lg">
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form
+                action="https://emails.lla.in/subscribe"
+                method="POST"
+                acceptCharset="utf-8"
+                className="space-y-4"
+              >
                 <Input
                   type="text"
-                  id="fullName"
-                  name="fullName"
-                  label="Full Name"
-                  value={formData.fullName}
-                  onChange={handleInputChange}
+                  id="name"
+                  name="name"
                   placeholder="Enter your full name"
                   required
                 />
@@ -83,42 +45,46 @@ export default function WeeklyAINewsletter() {
                   type="email"
                   id="email"
                   name="email"
-                  label="Email-ID"
-                  value={formData.email}
-                  onChange={handleInputChange}
                   placeholder="Enter your email address"
                   required
                 />
 
                 <Input
                   type="text"
-                  id="jobDesignation"
-                  name="jobDesignation"
-                  label="Job Designation*"
-                  value={formData.jobDesignation}
-                  onChange={handleInputChange}
+                  id="JobDesignation"
+                  name="JobDesignation"
                   placeholder="e.g., Software Engineer, Marketing Manager"
                   required
                 />
 
                 <Input
                   type="text"
-                  id="company"
-                  name="company"
-                  label="Company*"
-                  value={formData.company}
-                  onChange={handleInputChange}
+                  id="Company"
+                  name="Company"
                   placeholder="Enter your company name"
                   required
                 />
 
+                {/* Honeypot field for spam prevention */}
+                <div style={{ display: "none" }}>
+                  <label htmlFor="hp">HP</label>
+                  <input type="text" name="hp" id="hp" />
+                </div>
+
+                {/* Hidden required fields */}
+                <input
+                  type="hidden"
+                  name="list"
+                  value="68GRsk325uhvP08mY8Mxmw"
+                />
+                <input type="hidden" name="subform" value="yes" />
+
                 <Button
                   type="submit"
-                  disabled={isSubmitting}
                   className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white transition-all duration-300"
                   size="lg"
                 >
-                  {isSubmitting ? "Submitting..." : "Submit"}
+                  Submit
                 </Button>
               </form>
             </div>
