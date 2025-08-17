@@ -42,7 +42,7 @@ export const Gallery: React.FC<GalleryProps> = ({
           {/* Left Arrow Button */}
           <button
             onClick={scrollLeft}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-primary-700 text-white shadow-lg rounded-full p-3 hover:bg-primary-600 transition-all duration-200 hover:scale-110"
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-primary-700 text-white shadow-lg rounded-full p-3 hover:bg-primary-600 transition-all duration-200 hover:scale-110"
             aria-label="Scroll left"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -51,7 +51,7 @@ export const Gallery: React.FC<GalleryProps> = ({
           {/* Right Arrow Button */}
           <button
             onClick={scrollRight}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-primary-700 text-white shadow-lg rounded-full p-3 hover:bg-primary-600 transition-all duration-200 hover:scale-110"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-primary-700 text-white shadow-lg rounded-full p-3 hover:bg-primary-600 transition-all duration-200 hover:scale-110"
             aria-label="Scroll right"
           >
             <ChevronRight className="w-6 h-6" />
@@ -60,16 +60,12 @@ export const Gallery: React.FC<GalleryProps> = ({
           {/* Scrollable container */}
           <div 
             ref={scrollContainerRef}
-            className="flex overflow-x-auto scrollbar-hide space-x-6 pb-4 mx-16 cursor-grab active:cursor-grabbing"
-            style={{ 
-              scrollSnapType: 'x mandatory',
-            }}
+            className="flex overflow-x-auto scrollbar-hide space-x-6 pb-4 px-16 cursor-grab active:cursor-grabbing snap-x snap-mandatory"
           >
             {images.map((image, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-72 h-96 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                style={{ scrollSnapAlign: 'start' }}
+                className="flex-shrink-0 w-72 h-96 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 snap-start"
               >
                 <img
                   src={image}
