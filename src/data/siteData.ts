@@ -1,10 +1,10 @@
-import { 
-  NavigationItem, 
-  ServiceCard, 
-  StatisticItem, 
-  SocialLink, 
-  ServiceDetailCard, 
-  FooterSection 
+import {
+  NavigationItem,
+  ServiceCard,
+  StatisticItem,
+  SocialLink,
+  ServiceDetailCard,
+  FooterSection
 } from '../types';
 
 export const navigationItems: NavigationItem[] = [
@@ -29,7 +29,7 @@ export const serviceCards: ServiceCard[] = [
     buttonLink: "#newsletter"
   },
   {
-    id: "community", 
+    id: "community",
     title: "Community",
     description: "Network & Collaborate with the Top 1% AI Leaders & Learners",
     buttonText: "Join Community",
@@ -38,7 +38,7 @@ export const serviceCards: ServiceCard[] = [
   {
     id: "workshops",
     title: "Workshops",
-    description: "Learn the Latest AI Tools & Skills from the Best in Industry", 
+    description: "Learn the Latest AI Tools & Skills from the Best in Industry",
     buttonText: "View Workshops",
     buttonLink: "https://lu.ma/user/usr-VyEFrpRvQ9pboAz"
   },
@@ -57,7 +57,7 @@ export const ourOfferings: ServiceDetailCard[] = [
     title: "Strategic Consulting for CEOs",
     description: "Navigate AI transformation with personalized guidance",
     features: [
-      "Client Portfolio: Think9, Athena",
+      "Clients: Think9, Athena",
       "Exclusive one-on-one consultations helping CEOs transform their AI vision into strategic roadmaps and actionable implementation plans."
     ],
     buttonText: "Book Consultation",
@@ -70,7 +70,7 @@ export const ourOfferings: ServiceDetailCard[] = [
     title: "Training & Workshops",
     description: "Empower your team with an AI training workshop",
     features: [
-      "Client Portfolio: Adani, Microsoft, upGrad, GrowthSchool",
+      "Clients: Adani, Microsoft, upGrad, GrowthSchool",
       "Tailored AI workshops that equip teams with practical skills to implement and scale AI solutions across business functions."
     ],
     buttonText: "Book Workshop",
@@ -83,7 +83,7 @@ export const ourOfferings: ServiceDetailCard[] = [
     title: "AI POC for Enterprises",
     description: "Get Scalable AI Solutions within 2 weeks",
     features: [
-      "Client Portfolio: PAR, Aditya Birla, Bajaj Finserv, Polar AI",
+      "Clients: PAR, Aditya Birla, Bajaj Finserv, Polar AI",
       "Fast-track AI implementation with enterprise-grade POCs, delivering validated solutions ready for scaling"
     ],
     buttonText: "Request POC",
@@ -96,10 +96,10 @@ export const ourOfferings: ServiceDetailCard[] = [
     title: "Speaking Engagements",
     description: "Nivedan has delivered 70+ talks on Global Stages",
     features: [
-      "Client Portfolio: TEDx, IITB, IIWC Thailand, NTU Singapore (MBA), Whistling Woods, Formidium, HR Conclave, IIDE, Jagruk Fest",
+      "Clients: TEDx, IITB, IIWC Thailand, NTU Singapore (MBA), Whistling Woods, Formidium, HR Conclave, IIDE, Jagruk Fest",
       "Transforming complex AI concepts into actionable insights - from inspiring teenagers to empowering CEOs"
     ],
-    buttonText: "Book Speaking", 
+    buttonText: "Book Speaking",
     buttonLink: "https://wa.me/916377589749",
     imageUrl: "Public Speaking.JPG",
     bgColor: "bg-gradient-to-br from-green-50 to-emerald-100"
@@ -117,19 +117,19 @@ export const ourOfferings: ServiceDetailCard[] = [
     imageUrl: "https://static.wixstatic.com/media/c04408_533553efa42f4aebbeab3b674e2b4d52~mv2.jpg/v1/fill/w_400,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c04408_533553efa42f4aebbeab3b674e2b4d52~mv2.jpg",
     bgColor: "bg-gradient-to-br from-yellow-50 to-amber-100"
   },
-    {
-      id: "community",
-      title: "APEs Community",
-      description: "Exclusive Network of AI-First Entrepreneurs",
-      features: [
-        "Exclusive Network of AI-First Entrepreneurs",
-        "Scale your entrepreneurial journey with workshops, expert guidance, and a vibrant community committed to innovation and growth."
-      ],
-      buttonText: "Join Community",
-      buttonLink: "https://link.lla.in/Community-2",
-      imageUrl: "APE's Community.jpg",
-      bgColor: "bg-gradient-to-br from-teal-50 to-cyan-100"
-    }
+  {
+    id: "community",
+    title: "APEs Community",
+    description: "Exclusive Network of AI-First Entrepreneurs",
+    features: [
+      "Exclusive Network of AI-First Entrepreneurs",
+      "Scale your entrepreneurial journey with workshops, expert guidance, and a vibrant community committed to innovation and growth."
+    ],
+    buttonText: "Join Community",
+    buttonLink: "https://link.lla.in/Community-2",
+    imageUrl: "APE's Community.jpg",
+    bgColor: "bg-gradient-to-br from-teal-50 to-cyan-100"
+  }
 ];
 
 export const serviceDetailCards: ServiceDetailCard[] = [
@@ -139,7 +139,7 @@ export const serviceDetailCards: ServiceDetailCard[] = [
     description: "Keeping up with the latest news, tools & powerful use cases of AI is a huge challenge. Join 125,000+ professionals, innovators and leaders mastering AI with our free weekly email newsletter. Here's why you should join:",
     features: [
       "Get exclusive AI tools, prompts & tutorials right in your inbox",
-      "Follow the latest news & announcements in the world of AI", 
+      "Follow the latest news & announcements in the world of AI",
       "Stay ahead of everyone else & leverage AI to 10x your impact"
     ],
     buttonText: "Subscribe For Free",
@@ -148,7 +148,7 @@ export const serviceDetailCards: ServiceDetailCard[] = [
     bgColor: "bg-[#F2BDDA]"
   },
   {
-    id: "community-detail", 
+    id: "community-detail",
     title: "Community",
     description: "Network & learn with the Top 1% entrepreneurs, investors, corporate leaders & talent who are building, investing or leveraging AI to 10X their impact.",
     features: [
@@ -157,13 +157,13 @@ export const serviceDetailCards: ServiceDetailCard[] = [
       "Strictly no-spam policy. We hate spammy Whatsapp groups just like you. Immediate removal upon breach"
     ],
     buttonText: "Join The AI Community",
-    buttonLink: "https://link.lla.in/Community-2", 
+    buttonLink: "https://link.lla.in/Community-2",
     imageUrl: "https://static.wixstatic.com/media/c04408_910540dc3b1247bdbfe9084b58a256b1~mv2.jpg/v1/fill/w_384,h_464,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1.jpg",
     bgColor: "bg-[#F2CED8]"
   },
   {
     id: "consulting-detail",
-    title: "Consulting & Training", 
+    title: "Consulting & Training",
     description: "Gen AI is unlocking unprecedented opportunities for businesses, but adapting to this technology can be daunting. With our expertise in the latest & most powerful Gen AI use cases, tools, and deployment, we've helped several organizations drive transformation effectively. We can help:",
     features: [
       "Craft a Gen AI transformation vision and strategic roadmap unique to your goals",
@@ -184,13 +184,13 @@ export const socialLinks: SocialLink[] = [
     iconUrl: "https://static.wixstatic.com/media/11062b_55e4be1e75564866b6c28290f9a9d271~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_55e4be1e75564866b6c28290f9a9d271~mv2.png"
   },
   {
-    platform: "LinkedIn", 
+    platform: "LinkedIn",
     url: "https://www.linkedin.com/in/nivedanrathi/",
     iconUrl: "https://static.wixstatic.com/media/11062b_7cf73902d06c4f3685c379a21c6c8285~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_7cf73902d06c4f3685c379a21c6c8285~mv2.png"
   },
   {
     platform: "Twitter",
-    url: "https://x.com/nivedan_ai", 
+    url: "https://x.com/nivedan_ai",
     iconUrl: "https://static.wixstatic.com/media/11062b_e9b4e9522d3c4de3a8a652c7f13af3ef~mv2.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_e9b4e9522d3c4de3a8a652c7f13af3ef~mv2.png"
   },
   {
@@ -211,7 +211,7 @@ export const footerSections: FooterSection[] = [
     ]
   },
   {
-    title: "LEGALS", 
+    title: "LEGALS",
     links: [
       { label: "Privacy Policy", href: "#" },
       { label: "Terms & Conditions", href: "#" },
@@ -276,8 +276,11 @@ export const brandsThatTrustUs: BrandInfo[] = [
 
 
 export const galleryImages: string[] = [
-  "/Photo Galary_1.JPG",
-  "/Photo Galary_2.JPG",
+  "/Photo Galary_6.JPG",
+  "/Photo Galary_7.JPG",
+  "/Photo Galary_8.JPG",
+  "/Photo Galary_9.JPG",
+  "/Photo Galary_10.JPG",
   "/Photo Galary_3.JPG",
-  "/Photo Galary_4.JPG.png",
+  "/Photo Galary_4.JPG.png"
 ];

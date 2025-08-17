@@ -36,42 +36,51 @@ export const Header: React.FC<HeaderProps> = ({ navigation }) => {
             </div>
           </div>
 
-          {/* Social Media Icons */}
-          <div className="flex items-center space-x-3 text-white text-lg">
-            <a
-              href="https://www.linkedin.com/in/nivedanrathi/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-accent-orange transition-colors duration-200"
-            >
-              <FaLinkedinIn />
-            </a>
+          {/* Social Media Icons and Contact Button */}
+          <div className="flex items-center space-x-10">
+            <div className="flex items-center space-x-6 text-white text-lg">
+              <a
+                href="https://www.linkedin.com/in/nivedanrathi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-accent-orange transition-colors duration-200"
+              >
+                <FaLinkedinIn />
+              </a>
+
+              <a
+                href="https://x.com/nivedan_ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-accent-orange transition-colors duration-200"
+              >
+                <FaTwitter />
+              </a>
+
+              <a
+                href="https://www.instagram.com/nivedan.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-accent-orange transition-colors duration-200"
+              >
+                <FaInstagram />
+              </a>
+
+              <a
+                href="https://www.youtube.com/@nivedan.ai25"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-accent-orange transition-colors duration-200"
+              >
+                <FaYoutube />
+              </a>
+            </div>
 
             <a
-              href="https://x.com/nivedan_ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-accent-orange transition-colors duration-200"
+              href="mailto:nivedan@futureandai.com?cc=team@futureandai.com"
+              className="px-6 py-2 bg-accent-orange text-white font-montserrat font-medium rounded-full hover:bg-accent-orange/90 transition-all duration-200"
             >
-              <FaTwitter />
-            </a>
-
-            <a
-              href="https://www.instagram.com/nivedan.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-accent-orange transition-colors duration-200"
-            >
-              <FaInstagram />
-            </a>
-
-            <a
-              href="https://www.youtube.com/@nivedan.ai25"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-accent-orange transition-colors duration-200"
-            >
-              <FaYoutube />
+              Contact Me
             </a>
           </div>
         </div>

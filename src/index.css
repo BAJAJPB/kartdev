@@ -2,60 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add the grainy texture style */
+.grainy {
+  position: relative;
+  overflow: hidden;
+}
+.grainy::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.transparenttextures.com/patterns/grain.png');
+  opacity: 0.1; /* Adjust grain strength */
+  pointer-events: none;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
   }
-  
   body {
     font-family: 'Montserrat', sans-serif;
   }
 }
 
 @layer components {
+  /* Reusable Buttons */
   .btn-primary {
     @apply bg-accent-orange hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-montserrat font-bold transition-all duration-200 transform hover:scale-105;
   }
-  
   .btn-secondary {
     @apply bg-primary-700 hover:bg-accent-pink text-white px-6 py-3 rounded-lg font-montserrat font-normal transition-all duration-200;
   }
-  
+
+  /* Card Styling */
   .card {
     @apply bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;
   }
-  
+
+  /* Gradient Background */
   .gradient-bg {
     @apply bg-gradient-to-r from-primary-500 to-black;
+  }
+
+  /* 🔑 Alignment & Layout Fixes */
+  .section-container {
+    @apply container mx-auto px-4 md:px-8;
+  }
+  .section {
+    @apply py-16 md:py-24;
+  }
+  .center-flex {
+    @apply flex justify-center items-center;
+  }
+  .grid-3 {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-12;
+  }
+
+  /* Hero Section */
+  .hero-title {
+    @apply text-4xl md:text-6xl font-bold text-center text-primary-700;
+  }
+  .hero-subtitle {
+    @apply mt-6 max-w-2xl mx-auto text-lg text-primary-600 text-center;
+  }
+
+  /* Footer */
+  .footer {
+    @apply text-center text-primary-600 border-t border-primary-100 py-12 mt-12;
   }
 }
 
 @layer utilities {
+  /* Text Shadows */
   .text-shadow {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
-  
   .text-shadow-lg {
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.4);
   }
-  
+
+  /* Scroll Animations */
   .animate-on-scroll {
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease-out;
   }
-  
   .animate-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
   }
-  
-  /* Hide scrollbar for webkit browsers */
+
+  /* Hide scrollbar */
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }

@@ -6,11 +6,11 @@ import { AboutSection } from './components/AboutSection';
 import { OurClients } from './components/OurClients';
 import { Gallery } from './components/Gallery';
 import { OfferingsGrid } from './components/OfferingsGrid';
-import { 
-  navigationItems, 
-  statistics, 
-  ourOfferings, 
-  brandsThatTrustUs, 
+import {
+  navigationItems,
+  statistics,
+  ourOfferings,
+  brandsThatTrustUs,
   galleryImages
 } from './data/siteData';
 import NewsletterSubscription from './components/newsletter-subscription';
@@ -23,41 +23,41 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#231B3B]">
-      <Header 
+      <Header
         logo={logoUrl}
         navigation={navigationItems}
         ctaText="Partner With Us"
         ctaLink="https://calendly.com/atray-lla/alignmentcall"
       />
       <div id="home">
-        <HeroSlideshow 
+        <HeroSlideshow
           title="Nivedan Rathi"
           subtitle="Artificial Intelligence Consultant & International Speaker"
           ctaText="Contact Now"
-          ctaLink="https://wa.me/916377589749" tagline={''}        />
+          ctaLink="https://wa.me/916377589749" tagline={''} />
       </div>
 
       <Statistics statistics={statistics} />
-      
-      <OurClients 
+
+      <OurClients
         title="Brands that Trust Us"
-        brands={brandsThatTrustUs} 
+        brands={brandsThatTrustUs}
       />
-      
+
       <div id="offerings">
-        <OfferingsGrid 
+        <OfferingsGrid
           title="Our Offerings"
           offerings={ourOfferings}
         />
       </div>
-      
-      <div id="newsletter"></div>  
+
+      <div id="newsletter"></div>
       <div id="community"></div>
       <div id="workshops"></div>
       <div id="consulting"></div>
-      
 
-      
+
+
       <div id="about">
         <AboutSection
           title="About"
@@ -67,9 +67,9 @@ function App() {
           profileImage={profileImageUrl}
         />
       </div>
-      
+
       <div id="gallery">
-        <Gallery 
+        <Gallery
           title="Gallery"
           images={galleryImages}
         />

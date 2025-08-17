@@ -21,14 +21,14 @@ export const OfferingsGrid: React.FC<OfferingsGridProps> = ({ title, offerings }
         {/* Offerings Grid - 3x2 */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {offerings.map((offering, index) => (
-            <div 
-              key={offering.id} 
+            <div
+              key={offering.id}
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Image Container */}
               <div className="relative h-64 overflow-hidden">
-                <img 
+                <img
                   src={offering.imageUrl}
                   alt={offering.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -42,7 +42,7 @@ export const OfferingsGrid: React.FC<OfferingsGridProps> = ({ title, offerings }
                 <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-gray-800 transition-colors duration-200">
                   {offering.title}
                 </h3>
-                
+
                 {/* Features */}
                 <div className="space-y-2">
                   {offering.features.map((feature, featureIndex) => (
@@ -53,11 +53,11 @@ export const OfferingsGrid: React.FC<OfferingsGridProps> = ({ title, offerings }
                         </div>
                       ) : feature.includes('growth.') && offering.id === 'community' ? (
                         <p>
-                          {feature.replace('growth.', 'growth.')} 
-                          <a 
-                            href="https://apes.lla.in/" 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
+                          {feature.replace('growth.', 'growth.')}
+                          <a
+                            href="https://apes.lla.in/"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center ml-2 text-blue-600 hover:text-blue-800 transition-colors"
                           >
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -7,7 +7,7 @@ interface StatisticsProps {
 
 export const Statistics: React.FC<StatisticsProps> = ({ statistics }) => {
   return (
-    <section className="bg-gradient-to-r from-blue-800 to-purple-800 py-12">
+    <section className="bg-gradient-to-r from-violet-500 via-indigo-900 to-black py-12">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {statistics.map((stat, index) => (

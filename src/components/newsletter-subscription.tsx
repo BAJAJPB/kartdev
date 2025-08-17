@@ -78,7 +78,7 @@ export default function WeeklyAINewsletter() {
       {/* Footer */}
       <footer className="bg-black border-t border-gray-700 py-4">
         <div className="max-w-6xl mx-auto px-6 md:px-8 lg:px-12 text-center text-gray-400 text-sm">
-          © 2023 Nivedan Rathi. All rights reserved.
+          © 2025 Nivedan Rathi. All rights reserved.
         </div>
       </footer>
     </div>

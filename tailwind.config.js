@@ -18,7 +18,7 @@ export default {
         },
         accent: {
           orange: '#EB721A',
-          pink: '#FF7FE8', 
+          pink: '#FF7FE8',
           lime: '#DEFF00',
         }
       },
